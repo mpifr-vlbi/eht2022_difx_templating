@@ -1,6 +1,3 @@
-*
-* "./scripts/alma-vex-defs.py --lo1 341.600 -r 3" (not 4-8/5-9 aware, thus using lo1 342.600 - 1 GHz)
-*  equivalent to "$ehtc/alma-vex-defs.py -f 347600.00000 -w58.0 -s U -r alma"
 def FREQ_AA; * derived for on lo1=341.600 lo2=1.875 GHz
    sample_rate = 125.0 Ms/sec;  * (2bits/sample)
    * Recorder 3, slots 1+2, USB around LO1 + 6 GHz, X-pol, subbands 0-31

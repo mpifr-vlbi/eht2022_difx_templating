@@ -1,0 +1,72 @@
+$SOURCE;
+*
+def 3C84;
+     source_name = 3C84;
+*    this source had calibrator code: V
+*    alternate source name: J0319+4130
+*    alternate source name: 0316+413
+*    alternate source name: J0319+41
+*    GSFC 2011B astro solution      9957 Observations
+     ra = 03h19m48.1600900s; dec =  41d30'42.104120"; ref_coord_frame = J2000;
+*    ra = 03h16m29.5672597s; dec =  41d19'51.916994"; ref_coord_frame = B1950;
+*    ra = 03h21m15.3564397s; dec =  41d35'35.072621"; ref_coord_frame = Date;
+enddef;
+*
+def J0423-0120;
+     source_name = J0423-0120;
+*    this source had calibrator code: V
+*    alternate source name: 0420-014
+*    alternate source name: J0423-01
+*    rfc_2012b Petrov, 2012, unpublished 38616 observations
+     ra = 04h23m15.8007270s; dec = -01d20'33.065550"; ref_coord_frame = J2000;
+*    ra = 04h20m43.5398501s; dec = -01d27'28.700255"; ref_coord_frame = B1950;
+*    ra = 04h24m22.9572854s; dec = -01d17'35.933691"; ref_coord_frame = Date;
+enddef;
+*
+def 3C120;
+     source_name = 3C120;
+*    this source had calibrator code: V
+*    alternate source name: J0433+0521
+*    alternate source name: 0430+052
+*    alternate source name: J0433+05
+*    GSFC 2011B astro solution      8163 Observations
+     ra = 04h33m11.0955270s; dec =  05d21'15.619210"; ref_coord_frame = J2000;
+*    ra = 04h30m31.6020583s; dec =  05d14'59.616426"; ref_coord_frame = B1950;
+*    ra = 04h34m21.4519758s; dec =  05d23'57.312919"; ref_coord_frame = Date;
+enddef;
+*
+def OJ287;
+     source_name = OJ287;
+*    this source had calibrator code: V
+*    alternate source name: J0854+2006
+*    alternate source name: 0851+202
+*    alternate source name: J0854+20
+*    rfc_2012b Petrov, 2012, unpublished 191510 observations
+     ra = 08h54m48.8749300s; dec =  20d06'30.640780"; ref_coord_frame = J2000;
+*    ra = 08h51m57.2506184s; dec =  20d17'58.417327"; ref_coord_frame = B1950;
+*    ra = 08h56m05.0775578s; dec =  20d01'25.483546"; ref_coord_frame = Date;
+enddef;
+*
+def J1159+2914;
+     source_name = J1159+2914;
+*    this source had calibrator code: V
+*    alternate source name: 1156+295
+*    alternate source name: J1159+29
+*    rfc_2012b Petrov, 2012, unpublished 64535 observations
+     ra = 11h59m31.8339120s; dec =  29d14'43.826780"; ref_coord_frame = J2000;
+*    ra = 11h56m57.7862114s; dec =  29d31'25.738682"; ref_coord_frame = B1950;
+*    ra = 12h00m39.8903676s; dec =  29d07'14.420147"; ref_coord_frame = Date;
+enddef;
+*
+def 3C279;
+     source_name = 3C279;
+*    this source had calibrator code: V
+*    alternate source name: J1256-0547
+*    alternate source name: 1253-055
+*    alternate source name: J1256-05
+*    GSFC 2011B astro solution      7402 Observations
+     ra = 12h56m11.1665670s; dec = -05d47'21.524810"; ref_coord_frame = J2000;
+*    ra = 12h53m35.8312994s; dec = -05d31'07.995950"; ref_coord_frame = B1950;
+*    ra = 12h57m19.3496252s; dec = -05d54'29.144468"; ref_coord_frame = Date;
+enddef;
+*------------------------------------------------------------------------------
