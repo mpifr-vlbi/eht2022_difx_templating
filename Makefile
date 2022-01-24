@@ -69,6 +69,22 @@ prerequisites:
 	#cp -a templates/230G/band3/clocks_SMA.vex templates/345G/band3/clocks_SMA.vex
 	#cp -a templates/230G/band4/clocks_SMA.vex templates/345G/band4/clocks_SMA.vex
 
+datadirsDR2022:
+	for exptname in $(TRACKS) $(TRACKS_345G); do \
+		mkdatadir $${exptname} ; \
+		for station in Aa Pv Lm Gl Sw; do \
+			mkdatadir $${exptname}/$${station} ; \
+			mkdatadir $${exptname}/$${station}/12 ; \
+			mkdatadir $${exptname}/$${station}/34 ; \
+		done ; \
+		mkdatadir $${exptname}/Nn ; \
+		mkdatadir $${exptname}/Nn/1 ; \
+		mkdatadir $${exptname}/Nn/2 ; \
+		mkdatadir $${exptname}/Nn/3 ; \
+		mkdatadir $${exptname}/Nn/4 ; \
+	done
+
+
 ####################################################################################
 ## Build and install full correlation v2d vex config sets
 ####################################################################################
