@@ -28,7 +28,7 @@ function extract_vex_sections() {
 	# Remove LMT from SCHED block:
 	# - LMT did not observe EHT2021, yet is in the scheduled-triggered VEX files.
 	# - Remove the station to avoid an issue in DiFX vex2difx ("Developer error: VexData::hasData: cannot find antenna LM")
-	sed -i "s/station\=Lm/\*\*station\=Lm/g" $OUTDIR/sched_$vexname
+	# sed -i "s/station\=Lm/\*\*station\=Lm/g" $OUTDIR/sched_$vexname
 }
 
 for vexfile in `ls -1 $VEXDIR/*.vex`; do

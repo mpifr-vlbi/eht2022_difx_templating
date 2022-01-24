@@ -80,6 +80,8 @@ class ehtTrackList:
 
 		tracklist = []
 
+		if year==2022 or year<=0:
+			tracklist += ['e22j25', 'e22j26']
 		if year==2021 or year<=0:
 			tracklist += ['e21b09', 'e21e13', 'e21a14', 'e21d15', 'e21a16', 'e21a17', 'e21e18', 'e21f19']
 		if year==2018 or year<=0:
