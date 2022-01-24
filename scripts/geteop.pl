@@ -18,7 +18,7 @@
 # Copied from DiFX Trunk on 10may2021, modified
 # to use a local USNO finals file rather than downloading the most recent
 
-$FINALS_FILE = "usno_finals.10may2021.erp";
+$FINALS_FILE = "usno_finals.erp";
 
 $eopCount = 0;
 
