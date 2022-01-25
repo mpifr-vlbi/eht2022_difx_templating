@@ -1,6 +1,7 @@
 
 # Revision of correlation run, e.g., v1a, gold253, gold261, gold262
-REV  := v0
+#REV  := v0
+REV := FRINGE
 
 # Release version, e.g., 1
 REL  := 0
