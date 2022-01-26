@@ -694,9 +694,8 @@ def FREQ_SMA;
 enddef;
 def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    sample_rate = 128.0 Ms/sec;  * (2bits/sample)
-   * Recorder 1, slot 1, LSB-Inner, LCP, subbands 0-15
-   **chan_def = &B: 213324.00 MHz : U : 64.00 MHz : &CH01 : &BBC01 : &NoCal; * b1
-   chan_def = &B: 293324.00 MHz : U : 64.00 MHz : &CH01 : &BBC01 : &NoCal; * b1; redundant with ch17; fake the freq
+   * Recorder 1, slot 1, LSB-Inner, LCP, subbands 0-11,44-47
+   chan_def = &B: 213324.00 MHz : U : 64.00 MHz : &CH01 : &BBC01 : &NoCal; * b1
    chan_def = &B: 213388.00 MHz : U : 64.00 MHz : &CH02 : &BBC01 : &NoCal; * b1
    chan_def = &B: 213452.00 MHz : U : 64.00 MHz : &CH03 : &BBC01 : &NoCal; * b1
    chan_def = &B: 213516.00 MHz : U : 64.00 MHz : &CH04 : &BBC01 : &NoCal; * b1
@@ -708,10 +707,10 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 213900.00 MHz : U : 64.00 MHz : &CH10 : &BBC01 : &NoCal; * b1
    chan_def = &B: 213964.00 MHz : U : 64.00 MHz : &CH11 : &BBC01 : &NoCal; * b1
    chan_def = &B: 214028.00 MHz : U : 64.00 MHz : &CH12 : &BBC01 : &NoCal; * b1
-   chan_def = &B: 214092.00 MHz : U : 64.00 MHz : &CH13 : &BBC01 : &NoCal; * b1,b2
-   chan_def = &B: 214156.00 MHz : U : 64.00 MHz : &CH14 : &BBC01 : &NoCal; * b2
-   chan_def = &B: 214220.00 MHz : U : 64.00 MHz : &CH15 : &BBC01 : &NoCal; * b2
-   chan_def = &B: 214284.00 MHz : U : 64.00 MHz : &CH16 : &BBC01 : &NoCal; * b2
+   chan_def = &B: 216140.00 MHz : U : 64.00 MHz : &CH13 : &BBC01 : &NoCal; * b2
+   chan_def = &B: 216204.00 MHz : U : 64.00 MHz : &CH14 : &BBC01 : &NoCal;
+   chan_def = &B: 216268.00 MHz : U : 64.00 MHz : &CH15 : &BBC01 : &NoCal;
+   chan_def = &B: 216332.00 MHz : U : 64.00 MHz : &CH16 : &BBC01 : &NoCal;
    * Recorder 1, slot 2, LSB-Outer, LCP, subbands 0-15
    chan_def = &B: 213388.00 MHz : L : 64.00 MHz : &CH17 : &BBC01 : &NoCal; * b1
    chan_def = &B: 213324.00 MHz : L : 64.00 MHz : &CH18 : &BBC01 : &NoCal; * b1
@@ -746,9 +745,8 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 212556.00 MHz : L : 64.00 MHz : &CH46 : &BBC02 : &NoCal; * b1
    chan_def = &B: 212492.00 MHz : L : 64.00 MHz : &CH47 : &BBC02 : &NoCal; * b1
    chan_def = &B: 212428.00 MHz : L : 64.00 MHz : &CH48 : &BBC02 : &NoCal; * b1
-   * Recorder 1, slot 4, LSB-Inner, RCP, subbands 0-15
-   **chan_def = &B: 213324.00 MHz : U : 64.00 MHz : &CH49 : &BBC02 : &NoCal; * b1
-   chan_def = &B: 293324.00 MHz : U : 64.00 MHz : &CH49 : &BBC02 : &NoCal; * b1; redundant with ch33, fake the freq
+   * Recorder 1, slot 4, LSB-Inner, RCP, subbands 0-11,44-47
+   chan_def = &B: 213324.00 MHz : U : 64.00 MHz : &CH49 : &BBC02 : &NoCal; * b1
    chan_def = &B: 213388.00 MHz : U : 64.00 MHz : &CH50 : &BBC02 : &NoCal; * b1
    chan_def = &B: 213452.00 MHz : U : 64.00 MHz : &CH51 : &BBC02 : &NoCal; * b1
    chan_def = &B: 213516.00 MHz : U : 64.00 MHz : &CH52 : &BBC02 : &NoCal; * b1
@@ -760,10 +758,10 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 213900.00 MHz : U : 64.00 MHz : &CH58 : &BBC02 : &NoCal; * b1
    chan_def = &B: 213964.00 MHz : U : 64.00 MHz : &CH59 : &BBC02 : &NoCal; * b1
    chan_def = &B: 214028.00 MHz : U : 64.00 MHz : &CH60 : &BBC02 : &NoCal; * b1
-   chan_def = &B: 214092.00 MHz : U : 64.00 MHz : &CH61 : &BBC02 : &NoCal; * b1,b2
-   chan_def = &B: 214156.00 MHz : U : 64.00 MHz : &CH62 : &BBC02 : &NoCal; * b2
-   chan_def = &B: 214220.00 MHz : U : 64.00 MHz : &CH63 : &BBC02 : &NoCal; * b2
-   chan_def = &B: 214284.00 MHz : U : 64.00 MHz : &CH64 : &BBC02 : &NoCal; * b2
+   chan_def = &B: 216140.00 MHz : U : 64.00 MHz : &CH61 : &BBC02 : &NoCal; * b2
+   chan_def = &B: 216204.00 MHz : U : 64.00 MHz : &CH62 : &BBC02 : &NoCal;
+   chan_def = &B: 216268.00 MHz : U : 64.00 MHz : &CH63 : &BBC02 : &NoCal;
+   chan_def = &B: 216332.00 MHz : U : 64.00 MHz : &CH64 : &BBC02 : &NoCal;
 enddef;
 def FREQ_AA; * derived for on lo1=221.100 lo2=1.875 GHz
    sample_rate = 125.0 Ms/sec;  * (2bits/sample)
