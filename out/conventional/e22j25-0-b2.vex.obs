@@ -621,6 +621,7 @@ def NOEMA;
      site_type = fixed;
      site_velocity =  0.0 m/yr : 0.0 m/yr : 0.0 m/yr;
      site_position_epoch = 0;
+     site_position = 4523948.2896 m : 468035.5071 m : 4460364.9448 m;   * e22j25 pad N09, 10 phased
 enddef;
 $TRACKS;
 *
