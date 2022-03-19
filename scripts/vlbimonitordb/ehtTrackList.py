@@ -25,33 +25,9 @@ class ehtTrackList:
 	def __init__(self, year: int = -1):
 
 		self.tracks = {}
-		# e22b19.vex: exper_nominal_start=2022y078d03h14m00s; exper_nominal_stop=2022y078d19h18m00s;
-		# e22g18.vex: exper_nominal_start=2022y076d21h44m00s; exper_nominal_stop=2022y077d12h45m00s;
-		# e22j25.vex: exper_nominal_start=2022y025d04h10m00s; exper_nominal_stop=2022y025d06h55m00s;
-		# e22j26.vex: exper_nominal_start=2022y026d04h06m00s; exper_nominal_stop=2022y026d06h51m00s;
-		#
-		# e21b09.vex: exper_nominal_start=2021y098d23h52m00s; exper_nominal_stop=2021y099d15h23m00s;
-		# e21e13.vex: exper_nominal_start=2021y102d19h40m00s; exper_nominal_stop=2021y103d11h40m00s;
-		# e21a14.vex: exper_nominal_start=2021y103d23h40m00s; exper_nominal_stop=2021y104d15h50m00s;
-		# e21d15.vex: exper_nominal_start=2021y104d23h29m00s; exper_nominal_stop=2021y105d15h42m00s;
-		# e21a16.vex: exper_nominal_start=2021y105d23h32m00s; exper_nominal_stop=2021y106d15h02m00s;
-		# e21a17.vex: exper_nominal_start=2021y106d23h28m00s; exper_nominal_stop=2021y107d15h38m00s;
-		# e21e18.vex: exper_nominal_start=2021y107d19h20m00s; exper_nominal_stop=2021y108d11h49m00s;
-		# e21f19.vex: exper_nominal_start=2021y109d01h13m00s; exper_nominal_stop=2021y109d06h08m00s;
-		#
-		# e18c21.vex: exper_nominal_start=2018y110d22h38m00s; exper_nominal_stop=2018y111d14h36m00s;
-		# e18e22.vex: exper_nominal_start=2018y111d22h31m00s; exper_nominal_stop=2018y112d14h36m00s;
-		# e18a24.vex: exper_nominal_start=2018y114d03h02m00s; exper_nominal_stop=2018y114d15h45m00s;
-		# e18c25.vex: exper_nominal_start=2018y114d22h22m00s; exper_nominal_stop=2018y115d14h20m00s;
-		# e18g27.vex: exper_nominal_start=2018y116d19h30m00s; exper_nominal_stop=2018y117d09h33m00s;
-		# e18d28.vex: exper_nominal_start=2018y117d21h57m00s; exper_nominal_stop=2018y118d09h39m00s;
-		#
-		# e17d05.vex: exper_nominal_start=2017y094d22h31m00s; exper_nominal_stop=2017y095d17h07m00s;
-		# e17b06.vex: exper_nominal_start=2017y096d00h46m00s; exper_nominal_stop=2017y096d16h14m00s;
-		# e17c07.vex: exper_nominal_start=2017y097d04h01m00s; exper_nominal_stop=2017y097d20h42m00s;
-		# e17a10.vex: exper_nominal_start=2017y099d23h17m00s; exper_nominal_stop=2017y100d15h10m00s;
-		# e17e11.vex: exper_nominal_start=2017y100d22h16m00s; exper_nominal_stop=2017y101d15h22m00s;
 		self.tracks['e22xxx'] = ['exper_nominal_start=2022y060d04h10m00s;', 'exper_nominal_stop=2022y100d06h55m00s;']
+		#
+		self.tracks['e22c20'] = ['exper_nominal_start=2022y079d05h35m00s;', 'exper_nominal_stop=2022y079d21h38m00s;']
 		self.tracks['e22b19'] = ['exper_nominal_start=2022y078d03h14m00s;', 'exper_nominal_stop=2022y078d19h18m00s;']
 		self.tracks['e22g18'] = ['exper_nominal_start=2022y076d21h44m00s;', 'exper_nominal_stop=2022y077d12h45m00s;']
 		#
@@ -86,7 +62,7 @@ class ehtTrackList:
 		tracklist = []
 
 		if year==2022 or year<=0:
-			tracklist += ['e22j25', 'e22j26', 'e22g18', 'e22b19', 'e22xxx']
+			tracklist += ['e22j25', 'e22j26', 'e22g18', 'e22b19', 'e22c20', 'e22xxx']
 		if year==2021 or year<=0:
 			tracklist += ['e21b09', 'e21e13', 'e21a14', 'e21d15', 'e21a16', 'e21a17', 'e21e18', 'e21f19']
 		if year==2018 or year<=0:
