@@ -3,7 +3,7 @@
 include Makefile.inc
 
 ## Which tracks to generate
-TRACKS := e22j25 e22j26
+TRACKS := e22j25 e22j26 e22g18 e22b19 e22c20
 #TRACKS_345G := e21f19
 
 ## Derived set of v2d,vex in both conventional zoom setup and outputband setup
