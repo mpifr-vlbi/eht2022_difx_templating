@@ -43,9 +43,9 @@ def list_positions(session, timebracket, trackname, sites, doVex=False):
 				continue
 			if doVex:
 				if count==0:
-					print('     site_position = %.4f m : %.4f m : %.4f m;   * %s pad %s, %s phased' % (vlbipos[0],vlbipos[1],vlbipos[2],trackname,padname,numphased))
+					print('     site_position = %.4f m : %.4f m : %.4f m;   * %s pad %s, %s phased, %s' % (vlbipos[0],vlbipos[1],vlbipos[2],trackname,padname,numphased,str(tpretty)))
 				else:
-					print('     * site_position = %.4f m : %.4f m : %.4f m; * %s pad %s, %s phased' % (vlbipos[0],vlbipos[1],vlbipos[2],trackname,padname,numphased))
+					print('     * site_position = %.4f m : %.4f m : %.4f m; * %s pad %s, %s phased, %s' % (vlbipos[0],vlbipos[1],vlbipos[2],trackname,padname,numphased,str(tpretty)))
 			else:
 				print('Track %s : time bracket %s : %s %s %s' % (trackname,str(timebracket),str(tpretty),str(values),str(vlbipos)))
 			count += 1
