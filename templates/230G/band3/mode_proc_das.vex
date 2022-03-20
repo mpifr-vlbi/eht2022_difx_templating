@@ -3,22 +3,22 @@ $MODE;
 *
 def 1mmlcp;
      ref $PROCEDURES = Proc_01;
-     ref $IF = IF_NOMINAL:Nn:Pv:Gl:Ax:Sz:Kt:Mg:Sw:Mm;
+     ref $IF = IF_NOMINAL:Nn:Pv:Gl:Ax:Sz:Kt:Lm:Mg:Sw:Mm;
      ref $IF = IF_APEX:Ax;
      ref $IF = IF_ALMA:Aa;
-     ref $BBC = BBC_COMMON:Pv:Ax:Sz:Kt:Mg:Sw:Mm:Nn;
+     ref $BBC = BBC_COMMON:Pv:Ax:Sz:Kt:Lm:Mg:Sw:Mm:Nn;
      ref $BBC = BBC_POLSWAP:Gl;
      ref $BBC = BBC_ALMA:Aa;
-     ref $FREQ = FREQ_COMMON:Gl:Sz:Kt:Mg:Sw:Mm;
+     ref $FREQ = FREQ_COMMON:Gl:Sz:Kt:Lm:Mg:Sw:Mm;
      ref $FREQ = FREQ_DBBC3_AX:Ax;
      ref $FREQ = FREQ_DBBC3_PV:Pv;
      ref $FREQ = FREQ_AA:Aa;
      ref $FREQ = FREQ_Nn:Nn;
-     ref $TRACKS = VDIF8224:Pv:Gl:Ax:Sz:Kt:Mg:Sw:Mm;
+     ref $TRACKS = VDIF8224:Pv:Gl:Ax:Sz:Kt:Lm:Mg:Sw:Mm;
      ref $TRACKS = VDIF8032:Aa;
      ref $TRACKS = VDIFILACED:Nn;
-     ref $ROLL = NoRoll:Nn:Pv:Gl:Ax:Aa:Sz:Kt:Mg:Sw:Mm;
-     ref $PHASE_CAL_DETECT = NoDetect:Nn:Pv:Gl:Ax:Aa:Sz:Kt:Mg:Sw:Mm;
+     ref $ROLL = NoRoll:Nn:Pv:Gl:Ax:Aa:Sz:Kt:Lm:Mg:Sw:Mm;
+     ref $PHASE_CAL_DETECT = NoDetect:Nn:Pv:Gl:Ax:Aa:Sz:Kt:Lm:Mg:Sw:Mm;
 enddef;
 *------------------------------------------------------------------------------
 $PROCEDURES;

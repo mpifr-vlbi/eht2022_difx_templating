@@ -24,6 +24,12 @@ def Kt;
      ref $DAS = 2NONE<;
 enddef;
 *
+def Lm;
+     ref $SITE = LMT;
+     ref $ANTENNA = LMT;
+     ref $DAS = 2NONE<;
+enddef;
+*
 def Mg;
      ref $SITE = SMTO;
      ref $ANTENNA = SMTO;

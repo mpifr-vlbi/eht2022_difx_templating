@@ -28,6 +28,15 @@ def KITTPEAK;
      site_position_epoch =   55646;
 enddef;
 *
+def LMT;
+     site_type = fixed;
+     site_name = LMT;
+     site_ID = Lm;
+     site_position = -768715.63200 m:-5988507.07200 m: 2063354.85200 m;
+     site_velocity =  0.000000   m/yr:  0.000000   m/yr:  0.000000  m/yr;
+     site_position_epoch =   54466;
+enddef;
+*
 def PICOVEL;
      site_type = fixed;
      site_name = PICOVEL;
