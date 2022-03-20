@@ -76,23 +76,23 @@ $MODE;
 *
 def 1mmlcp;
      ref $PROCEDURES = Proc_01;
-     ref $IF = IF_NOMINAL:Nn:Pv:Gl:Ax:Sz:Kt:Mg:Sw:Mm;
+     ref $IF = IF_NOMINAL:Nn:Pv:Gl:Ax:Sz:Kt:Lm:Mg:Sw:Mm;
      ref $IF = IF_APEX:Ax;
      ref $IF = IF_ALMA:Aa;
-     ref $BBC = BBC_COMMON:Pv:Ax:Sz:Kt:Mg:Sw:Mm:Nn;
+     ref $BBC = BBC_COMMON:Pv:Ax:Sz:Kt:Lm:Mg:Sw:Mm:Nn;
      ref $BBC = BBC_POLSWAP:Gl;
      ref $BBC = BBC_ALMA:Aa;
-     ref $FREQ = FREQ_COMMON:Gl:Sz:Kt:Mg:Mm;
+     ref $FREQ = FREQ_COMMON:Gl:Sz:Kt:Lm:Mg:Mm;
      ref $FREQ = FREQ_SMA:Sw;
      ref $FREQ = FREQ_DBBC3_AX:Ax;
      ref $FREQ = FREQ_DBBC3_PV:Pv;
      ref $FREQ = FREQ_AA:Aa;
      ref $FREQ = FREQ_Nn:Nn;
-     ref $TRACKS = VDIF8224:Pv:Gl:Ax:Sz:Kt:Mg:Sw:Mm;
+     ref $TRACKS = VDIF8224:Pv:Gl:Ax:Sz:Kt:Lm:Mg:Sw:Mm;
      ref $TRACKS = VDIF8032:Aa;
      ref $TRACKS = VDIFILACED:Nn;
-     ref $ROLL = NoRoll:Nn:Pv:Gl:Ax:Aa:Sz:Kt:Mg:Sw:Mm;
-     ref $PHASE_CAL_DETECT = NoDetect:Nn:Pv:Gl:Ax:Aa:Sz:Kt:Mg:Sw:Mm;
+     ref $ROLL = NoRoll:Nn:Pv:Gl:Ax:Aa:Sz:Kt:Lm:Mg:Sw:Mm;
+     ref $PHASE_CAL_DETECT = NoDetect:Nn:Pv:Gl:Ax:Aa:Sz:Kt:Lm:Mg:Sw:Mm;
 enddef;
 *------------------------------------------------------------------------------
 $PROCEDURES;
@@ -145,6 +145,12 @@ enddef;
 def Kt;
      ref $SITE = KITTPEAK;
      ref $ANTENNA = KITTPEAK;
+     ref $DAS = 2NONE<;
+enddef;
+*
+def Lm;
+     ref $SITE = LMT;
+     ref $ANTENNA = LMT;
      ref $DAS = 2NONE<;
 enddef;
 *
@@ -211,6 +217,13 @@ def KITTPEAK;
      axis_type = az : el;
      antenna_motion = el :  60.0 deg/min : 30 sec;  *    9.000 deg/sec/sec
      antenna_motion = az :  60.0 deg/min : 30 sec;  *   18.000 deg/sec/sec
+     axis_offset =    0.00000 m;
+enddef;
+*
+def LMT;
+     axis_type = az : el;
+     antenna_motion = el :  60.0 deg/min : 30 sec;  *    1.000 deg/sec/sec
+     antenna_motion = az :  42.0 deg/min : 30 sec;  *    0.500 deg/sec/sec
      axis_offset =    0.00000 m;
 enddef;
 *
@@ -284,6 +297,15 @@ def KITTPEAK;
      site_position = -1995957.62800 m:-5037394.44600 m: 3357047.27400 m;
      site_velocity =  0.000000   m/yr:  0.000000   m/yr:  0.000000  m/yr;
      site_position_epoch =   55646;
+enddef;
+*
+def LMT;
+     site_type = fixed;
+     site_name = LMT;
+     site_ID = Lm;
+     site_position = -768715.63200 m:-5988507.07200 m: 2063354.85200 m;
+     site_velocity =  0.000000   m/yr:  0.000000   m/yr:  0.000000  m/yr;
+     site_position_epoch =   54466;
 enddef;
 *
 def PICOVEL;
@@ -677,8 +699,8 @@ enddef;
 *
 def FREQ_DBBC3_AX;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:212055.0 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
-     chan_def = &B:212055.0 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
+     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_DBBC3_PV;
