@@ -17,7 +17,7 @@ for expt in $expts; do
 		if [[ ! -f $clockfile ]]; then
 			echo "Making empty $clockfile"
 			echo "CLOCK" > $clockfile
-			echo "# Station ID    Delay (usec)    Rate (usec)" >> $clockfile
+			echo "# Station ID    Delay (usec)    Rate (sec/sec)" >> $clockfile
 		else
 			# echo "Keeping existing $clockfile"
 		fi
