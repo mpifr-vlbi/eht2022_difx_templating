@@ -1,3 +1,3 @@
 def Sw;
-  clock_early=2022y025d04h00m00s : 0.0 usec : 2022y025d04h00m00s : 1.313038e-15 ;
+  clock_early=2022y078d00h00m00s : 0.0 usec : 2022y078d00h00m00s : 1.313038e-15 ;
 enddef;
