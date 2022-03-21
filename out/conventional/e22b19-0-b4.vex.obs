@@ -40,16 +40,15 @@ def Gl;
 enddef;
 *
 def Kt;
-  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : -5.0834e-12;
+  clock_early = 2022y078d00h00m00s : +0.01 usec : 2022y078d00h00m00s : +5.51463318e-13;
 enddef;
 *
 def Lm;
-  * TODO: manually determined rate from 1pps monitoring was...?
   clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : -5.0834e-12;
 enddef;
 *
 def Mm; * JCMT
-  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : +1.313038e-15;
+  clock_early = 2022y078d00h00m00s : +0.31 usec : 2022y078d00h00m00s : +4.00635744e-13;
 enddef;
 *
 def Mg; * SMT
@@ -57,7 +56,7 @@ def Mg; * SMT
 enddef;
 *
 def Nn; * NOEMA
-  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : 5.62e-15;
+  clock_early = 2022y078d00h00m00s : +15.12 usec : 2022y078d00h00m00s : 0.0028e-12;
 enddef;
 *
 def Pv;
