@@ -47,7 +47,7 @@ def main():
 
 	dbsession = dbSession()
 	ehtTracks = ehtTrackList()
-	sites = ['ALMA','NOEMA','SMA','SMT','JCMT','APEX', 'GLT','SPT','LMT','PICO']
+	sites = ['ALMA','NOEMA','SMA','SMTO','JCMT','APEX','GLT','SPT','LMT','PICO','KP']
 
 	tracks = ehtTracks.listTracks()
 	doVex = False
