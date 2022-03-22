@@ -1,0 +1,49 @@
+VEX_rev = 1.5;
+*    SCHED vers: Development version 11.5. Started Apr. 2
+*    VEX/SCHED:  1.5.87
+*    Other versions: Sched:  11.5  Plot: 1.06  JPL-ephem: 1.01
+*------------------------------------------------------------------------------
+$GLOBAL;
+     ref $EXPER = e22e22;
+*                                                      +------------+
+*                         PI revision number:          |   12.0000  |
+*                                                      +------------+
+*    mode:       R2DBE
+*------------------------------------------------------------------------------
+$EXPER;
+*
+def e22e22;
+     exper_name = e22e22;
+     exper_description = "ALMA+EHT VLBI March 2022";
+     PI_name = "EHTC";
+     PI_email = not@an.address;
+*    year, doy: 2022,  80
+*    date     : Mon 21 Mar 2022
+*    MJD      : 59659
+     exper_nominal_start=2022y080d21h28m00s;
+     exper_nominal_stop=2022y081d16h00m30s;
+     target_correlator = difx;
+enddef;
+*------------------------------------------------------------------------------
+** include <clocks_initial.vex>
+** include <clocks_SMA.vex>
+** include <mode_proc_das.vex>
+** include <stations.vex>
+** include <antennas.vex>
+** include <sites_consistent.vex>
+** include <sites_NOEMA_e22e22.vex>
+** include <tracks.vex>
+** include <if.vex>
+** include <bbc.vex>
+** include <freqs.vex>
+** include <freqs_NOEMA.vex>
+** include <freqs_ALMA.vex>
+** include <phasecal.vex>
+** include <tape.vex>
+*------------------------------------------------------------------------------
+** include <sources_e22e22.vex>
+** include <sched_e22e22.vex>
+*------------------------------------------------------------------------------
+** include <eop_e22e22.vex>
+** loaddata <clocks_e22e22.dat>
+*------------------------------------------------------------------------------
