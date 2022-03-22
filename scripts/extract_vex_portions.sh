@@ -7,7 +7,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 VEXDIR=../observed_vex/
 OUTDIR=../templates/common_sections/
 
-pushd $SCRIPT_DIR
+pushd $SCRIPT_DIR  2>&1  > /dev/null
 
 function extract_vex_sections() {
 
@@ -36,3 +36,4 @@ for vexfile in `ls -1 $VEXDIR/*.vex`; do
 	extract_vex_sections $vexfile
 done
 
+popd   2>&1  > /dev/null
