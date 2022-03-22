@@ -19,7 +19,7 @@ for expt in $expts; do
 			echo "CLOCK" > $clockfile
 			echo "# Station ID    Delay (usec)    Rate (sec/sec)" >> $clockfile
 		else
-			# echo "Keeping existing $clockfile"
+			echo "Keeping existing $clockfile"
 		fi
 	done
 done

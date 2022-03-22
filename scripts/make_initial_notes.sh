@@ -18,7 +18,7 @@ for expt in $expts; do
 			echo "# Track $expt band $band" > $notesfile
 			echo "# Notes: ..." >> $notesfile
 		else
-			# echo "Keeping existing $notesfile"
+			echo "Keeping existing $notesfile"
 		fi
 	done
 done
