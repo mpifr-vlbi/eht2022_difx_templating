@@ -36,6 +36,9 @@ def list_positions(session, timebracket, trackname, sites, doVex=False):
 	for sitename, val in ss.items():
 		states, keyname, uxtime = session.make_state_series(val)
 		for (t,values) in zip(uxtime,states):
+			if len(values) < 4:
+				print('* Warning: incomplete data for %s timerange %s - expected refPad,refAntID,nrAnt,antIDsList - got %s' % (str(sites),str(timebracket),str(values)))
+				continue
 			phasedIDs, numphased, refantID, padname = values
 			vlbipos = noemapads.getPadCoordsECEF(padname)
 			tpretty = datetime.datetime.utcfromtimestamp(int(t))
