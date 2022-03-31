@@ -379,13 +379,7 @@ def NOEMA;
      site_type = fixed;
      site_velocity =  0.0 m/yr : 0.0 m/yr : 0.0 m/yr;
      site_position_epoch = 0;
-* Warning: incomplete data for ['NOEMA'] timerange [1647898080, 1647964800] - expected refPad,refAntID,nrAnt,antIDsList - got [None, 10]
-* Warning: incomplete data for ['NOEMA'] timerange [1647898080, 1647964800] - expected refPad,refAntID,nrAnt,antIDsList - got ['2,3,4,5,6,7,8,9,11,12', 10]
-* Warning: incomplete data for ['NOEMA'] timerange [1647898080, 1647964800] - expected refPad,refAntID,nrAnt,antIDsList - got ['2,3,5,7,8,9,11,12', 8]
-* Warning: incomplete data for ['NOEMA'] timerange [1647898080, 1647964800] - expected refPad,refAntID,nrAnt,antIDsList - got ['2,3,5,7,8,9,10,11,12', 9]
-* Warning: incomplete data for ['NOEMA'] timerange [1647898080, 1647964800] - expected refPad,refAntID,nrAnt,antIDsList - got ['2,3,5,7,8,9,11,12', 8]
-* Warning: incomplete data for ['NOEMA'] timerange [1647898080, 1647964800] - expected refPad,refAntID,nrAnt,antIDsList - got ['2,3,4,5,6,7,8,9,11,12', 10]
-     site_position = 4523937.1860 m : 468033.6604 m : 4460376.3250 m;  * from e22c20
+     site_position = 4523994.9873 m : 467980.6934 m : 4460323.6024 m;   * e22e22 pad W08
 enddef;
 $TRACKS;
 *
