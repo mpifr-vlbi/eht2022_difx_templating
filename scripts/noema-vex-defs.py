@@ -210,9 +210,9 @@ class NoemaVexFreqGenerator:
 		if 5 in recorders:
 
 			print('%s* Recorder 5, slot 1, LSB-Inner, LCP, subbands 16-31' % (self.indent))
-			subblock(LSB, INNER, range(16,32), 'R')
-			print('%s* Recorder 5, slot 2, LSB-Inner, RCP, subbands 16-31' % (self.indent))
 			subblock(LSB, INNER, range(16,32), 'L')
+			print('%s* Recorder 5, slot 2, LSB-Inner, RCP, subbands 16-31' % (self.indent))
+			subblock(LSB, INNER, range(16,32), 'R')
 
 		print('enddef;')
 
@@ -242,46 +242,46 @@ class NoemaVexFreqGenerator:
 		if 1 in recorders:
 
 			print('%s* Recorder 1, slot 1, LSB-Lower/Inner PolyFiX 6 SFP+ 1, LCP, subbands 16-31' % (self.indent))
-			subblock(LSB, INNER, range(16,32), 'R')
-			print('%s* Recorder 1, slot 2, LSB-Lower/Inner PolyFiX 6 SFP+ 0, LCP, subbands 0-15' % (self.indent))
-			subblock(LSB, INNER, range(16), 'R')
-			print('%s* Recorder 1, slot 3, LSB-Lower/Inner PolyFiX 2 SFP+ 0, RCP, subbands 0-15' % (self.indent))
-			subblock(LSB, INNER, range(16), 'L')
-			print('%s* Recorder 1, slot 4, LSB-Lower/Inner PolyFiX 2 SFP+ 1, RCP, subbands 16-31' % (self.indent))
 			subblock(LSB, INNER, range(16,32), 'L')
+			print('%s* Recorder 1, slot 2, LSB-Lower/Inner PolyFiX 6 SFP+ 0, LCP, subbands 0-15' % (self.indent))
+			subblock(LSB, INNER, range(16), 'L')
+			print('%s* Recorder 1, slot 3, LSB-Lower/Inner PolyFiX 2 SFP+ 0, RCP, subbands 0-15' % (self.indent))
+			subblock(LSB, INNER, range(16), 'R')
+			print('%s* Recorder 1, slot 4, LSB-Lower/Inner PolyFiX 2 SFP+ 1, RCP, subbands 16-31' % (self.indent))
+			subblock(LSB, INNER, range(16,32), 'R')
 
 		if 2 in recorders:
 
 			print('%s* Recorder 2, slot 1, LSB-Lower/Inner PolyFiX 6 SFP+ 3, LCP, subbands 48-63' % (self.indent))
-			subblock(LSB, INNER, range(48,64), 'R')
-			print('%s* Recorder 2, slot 2, LSB-Lower/Inner PolyFiX 6 SFP+ 2, LCP, subbands 32-47' % (self.indent))
-			subblock(LSB, INNER, range(32,48), 'R')
-			print('%s* Recorder 2, slot 3, LSB-Lower/Inner PolyFiX 2 SFP+ 2, RCP, subbands 32-47' % (self.indent))
-			subblock(LSB, INNER, range(32,48), 'L')
-			print('%s* Recorder 2, slot 4, LSB-Lower/Inner PolyFiX 2 SFP+ 3, RCP, subbands 48-63' % (self.indent))
 			subblock(LSB, INNER, range(48,64), 'L')
+			print('%s* Recorder 2, slot 2, LSB-Lower/Inner PolyFiX 6 SFP+ 2, LCP, subbands 32-47' % (self.indent))
+			subblock(LSB, INNER, range(32,48), 'L')
+			print('%s* Recorder 2, slot 3, LSB-Lower/Inner PolyFiX 2 SFP+ 2, RCP, subbands 32-47' % (self.indent))
+			subblock(LSB, INNER, range(32,48), 'R')
+			print('%s* Recorder 2, slot 4, LSB-Lower/Inner PolyFiX 2 SFP+ 3, RCP, subbands 48-63' % (self.indent))
+			subblock(LSB, INNER, range(48,64), 'R')
 
 		if 3 in recorders:
 
 			print('%s* Recorder 3, slot 1, USB-Lower/Inner PolyFiX 7 SFP+ 1, LCP, subbands 16-31' % (self.indent))
-			subblock(USB, INNER, range(16,32), 'R')
-			print('%s* Recorder 3, slot 2, USB-Lower/Inner PolyFiX 7 SFP+ 0, LCP, subbands 0-15' % (self.indent))
-			subblock(USB, INNER, range(16), 'R')
-			print('%s* Recorder 3, slot 3, USB-Lower/Inner PolyFiX 3 SFP+ 0, RCP, subbands 0-15' % (self.indent))
-			subblock(USB, INNER, range(16), 'L')
-			print('%s* Recorder 3, slot 4, USB-Lower/Inner PolyFiX 3 SFP+ 1, RCP, subbands 16-31' % (self.indent))
 			subblock(USB, INNER, range(16,32), 'L')
+			print('%s* Recorder 3, slot 2, USB-Lower/Inner PolyFiX 7 SFP+ 0, LCP, subbands 0-15' % (self.indent))
+			subblock(USB, INNER, range(16), 'L')
+			print('%s* Recorder 3, slot 3, USB-Lower/Inner PolyFiX 3 SFP+ 0, RCP, subbands 0-15' % (self.indent))
+			subblock(USB, INNER, range(16), 'R')
+			print('%s* Recorder 3, slot 4, USB-Lower/Inner PolyFiX 3 SFP+ 1, RCP, subbands 16-31' % (self.indent))
+			subblock(USB, INNER, range(16,32), 'R')
 
 		if 4 in recorders:
 
 			print('%s* Recorder 4, slot 1, USB-Lower/Inner PolyFiX 7 SFP+ 3, LCP, subbands 48-63' % (self.indent))
-			subblock(USB, INNER, range(48,64), 'R')
-			print('%s* Recorder 4, slot 2, USB-Lower/Inner PolyFiX 7 SFP+ 2, LCP, subbands 32-47' % (self.indent))
-			subblock(USB, INNER, range(32,48), 'R')
-			print('%s* Recorder 4, slot 4, USB-Lower/Inner PolyFiX 3 SFP+ 2, RCP, subbands 32-47' % (self.indent))
-			subblock(USB, INNER, range(32,48), 'L')
-			print('%s* Recorder 4, slot 3, USB-Lower/Inner PolyFiX 3 SFP+ 3, RCP, subbands 48-63' % (self.indent))
 			subblock(USB, INNER, range(48,64), 'L')
+			print('%s* Recorder 4, slot 2, USB-Lower/Inner PolyFiX 7 SFP+ 2, LCP, subbands 32-47' % (self.indent))
+			subblock(USB, INNER, range(32,48), 'L')
+			print('%s* Recorder 4, slot 4, USB-Lower/Inner PolyFiX 3 SFP+ 2, RCP, subbands 32-47' % (self.indent))
+			subblock(USB, INNER, range(32,48), 'R')
+			print('%s* Recorder 4, slot 3, USB-Lower/Inner PolyFiX 3 SFP+ 3, RCP, subbands 48-63' % (self.indent))
+			subblock(USB, INNER, range(48,64), 'R')
 
 		print('enddef;')
 
@@ -351,8 +351,8 @@ class NoemaVexFreqGenerator:
 		print('')
 		print('$BBC;')
 		print('def BBC_NN; * station Nn, note, polarizations are swapped vs Excel sheet (at least EHT2021 345G)')
-		print('    BBC_assign = &BBC01 :  1 : &IF_LCP;')
-		print('    BBC_assign = &BBC02 :  1 : &IF_RCP;')
+		print('    BBC_assign = &BBC%02d :  1 : &IF_LCP;' % (self.pol2bbcnr['L']))
+		print('    BBC_assign = &BBC%02d :  1 : &IF_RCP;' % (self.pol2bbcnr['R']))
 		print('enddef;')
 
 
