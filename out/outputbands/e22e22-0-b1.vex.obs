@@ -52,7 +52,10 @@ def Mm; * JCMT
 enddef;
 *
 def Mg; * SMT
-  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : -4.3196e-12;
+  * clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : -4.3196e-12;
+  * https://eht-wiki.haystack.mit.edu/Event_Horizon_Telescope_Home/Observing/2022_March/SMT_2022-03
+  * drift -0.249 ps/s
+  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : -0.249e-12;
 enddef;
 *
 def Nn; * NOEMA
