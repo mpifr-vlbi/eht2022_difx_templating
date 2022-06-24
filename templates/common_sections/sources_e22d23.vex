@@ -3,9 +3,11 @@ $SOURCE;
 def SGRA;
      source_name = SGRA;
 *    this source had calibrator code:  
-     ra = 17h45m40.0409000s; dec = -29d00'28.118000"; ref_coord_frame = J2000;
 *    ra = 17h42m29.3099269s; dec = -28d59'18.533323"; ref_coord_frame = B1950;
 *    ra = 17h47m03.8426076s; dec = -29d00'58.063597"; ref_coord_frame = Date;
+*    ra = 17h45m40.0409000s; dec = -29d00'28.118000"; ref_coord_frame = J2000;
+*    Proper motion (-3.156,-5.585) mas/yr:
+     ra = 17h45m40.03680s; dec = -29d00'28.2425"; ref_coord_frame = J2000;
 enddef;
 *
 def VXSGR;
