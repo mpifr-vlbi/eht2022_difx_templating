@@ -1,3 +1,5 @@
+## Get global settings; TRACKS (e22...), REV (FRINGE), REL (0), SITE (mpifr), EXPROOT (/Exps)
+include ../Makefile.inc
 
 M6DIRS := /cluster/difx/directories/
 
@@ -131,3 +133,18 @@ sz_b4:
 buglist:
 	# All scans that have unexpected time stamps
 	grep -v " 59" *.filelist
+
+## COPY
+
+install:
+	#for exptname in $(TRACKS); do \
+	#	mkdir -p /Exps/$${exptname}/$(REV)/b1/ /Exps/$${exptname}/$(REV)/b1_outputbands/ ; \
+	#	mkdir -p /Exps/$${exptname}/$(REV)/b4/ /Exps/$${exptname}/$(REV)/b4_outputbands/ ; \
+	#done
+	for exptname in $(TRACKS); do \
+		cp -a *_b1.* /Exps/$${exptname}/$(REV)/b1/ ;				\
+		cp -a *_b1.* /Exps/$${exptname}/$(REV)/b1_outputbands/ ;	\
+		cp -a *_b4.* /Exps/$${exptname}/$(REV)/b4/ ;				\
+		cp -a *_b4.* /Exps/$${exptname}/$(REV)/b4_outputbands/;		\
+	done
+

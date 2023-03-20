@@ -1,9 +1,6 @@
 
-## Get global settings; REV (v0), REL (0), SITE (mpifr), EXPROOT (/Exps)
+## Get global settings; TRACKS (e22...,) REV (v0), REL (0), SITE (mpifr), EXPROOT (/Exps)
 include Makefile.inc
-
-## Which tracks to generate
-TRACKS := e22j25 e22j26 e22g18 e22b19 e22c20 e22e22 e22d23 e22a26 e22f27
 
 ## Derived set of v2d,vex in both conventional zoom setup and outputband setup
 DIFX_TARGETS_ZOOM := $(addsuffix _b1,$(TRACKS)) $(addsuffix _b2,$(TRACKS)) $(addsuffix _b3,$(TRACKS)) $(addsuffix _b4,$(TRACKS))
