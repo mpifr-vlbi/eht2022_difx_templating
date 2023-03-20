@@ -4,77 +4,127 @@ M6DIRS := /cluster/difx/directories/
 all:
 	@echo "Options:  'make bonn'  or  'make hays'"
 
-mk6dir2filelist = sed -e 's/^/\/$(1)_fuse\/$(2)\//' $(M6DIRS)/$(3).filelist | cut -d' ' -f 1,2,3 | grep e21 > $(4)
+mk6dir2filelist = grep "^e22" $(M6DIRS)/$(3).filelist | sort -k 2 | sed -e 's/^/\/$(1)_fuse\/$(2)\//' | cut -d' ' -f 1,2,3 > $(4)
 
-bonn: pv_b1 pv_b4 nn_b1 nn_b4 gl_b1 gl_b4 mg_b1 kt_b1 aa_b1 sw_b1 sw_b4
+bonn: aa_b1 aa_b4 ax_b1 ax_b4 gl_b1 gl_b4 mm_b1 mm_b4 mg_b1 mg_b4 \
+	kt_b1 kt_b4 lm_b1 lm_b4 nn_b1 nn_b4 pv_b1 pv_b4 sw_b1 sw_b4 \
+	sz_b1 sz_b4
 
 hays: pv_b2 pv_b3
 
-## Pico
+## ALMA
 
-pv_b1: # MPI%8009 MPI%8004, MPI%8002 MPI%8014 ; Bonn mark6-09
-	$(call mk6dir2filelist,mark6-09,12,MPI%8009,Pico_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-09,34,MPI%8002,Pico_set1_b1.34.filelist)
+aa_b1:
+	$(call mk6dir2filelist,mark6-02,12,EHT%1231,ALMA_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,EHT%1233,ALMA_b1.34.filelist)
 
-pv_b2:
+aa_b4:
+	$(call mk6dir2filelist,mark6-02,12,EHT%1259,ALMA_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,EHT%1261,ALMA_b4.34.filelist)
 
-pv_b3:
+## APEX
 
-pv_b4: # SAO%0046 SAO%0018, SAO%0047 SAO%0049 ; Bonn mark6-10
-	$(call mk6dir2filelist,mark6-10,12,SAO%0046,Pico_set1_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-10,34,SAO%0047,Pico_set1_b4.34.filelist)
+ax_b1:
+	$(call mk6dir2filelist,mark6-02,12,EHT%1248,APEX_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,EHT%1249,APEX_b1.34.filelist)
 
-## NOEMA
-	
-nn_b1: # IRAM%009 %010 %011 %012 recorder1=b1
-	$(call mk6dir2filelist,mark6-04,1,IRAM%009,pNOEMA_set1_rec1.1.filelist)
-	$(call mk6dir2filelist,mark6-04,2,IRAM%010,pNOEMA_set1_rec1.2.filelist)
-	$(call mk6dir2filelist,mark6-04,3,IRAM%011,pNOEMA_set1_rec1.3.filelist)
-	$(call mk6dir2filelist,mark6-04,4,IRAM%012,pNOEMA_set1_rec1.4.filelist)
-
-nn_b4: # IRAM%013 %014 %015 %016 recorder3(!)=b4
-	$(call mk6dir2filelist,mark6-04,1,IRAM%013,pNOEMA_set1_rec3.1.filelist)
-	$(call mk6dir2filelist,mark6-04,2,IRAM%014,pNOEMA_set1_rec3.2.filelist)
-	$(call mk6dir2filelist,mark6-04,3,IRAM%015,pNOEMA_set1_rec3.3.filelist)
-	$(call mk6dir2filelist,mark6-04,4,IRAM%016,pNOEMA_set1_rec3.4.filelist)
+ax_b4:
+	$(call mk6dir2filelist,mark6-02,12,MPI%6400,APEX_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,EHT%1246,APEX_b4.34.filelist)
 
 ## GLT
 
-gl_b1: # BHC%0172/173/174/175 recorder=?? ; Bonn mark6-11
-	$(call mk6dir2filelist,mark6-11,12,BHC%0172,GLT_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-11,34,BHC%0174,GLT_set1_b1.34.filelist)
+gl_b1:
+	$(call mk6dir2filelist,mark6-11,12,BHC%0114,GLT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-11,34,BHC%0116,GLT_b1.34.filelist)
 
-gl_b4: # BHC%0164/165/166/167 recorder=?? ; Bonn mark6-11
-	$(call mk6dir2filelist,mark6-11,12,BHC%0164,GLT_set1_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-11,34,BHC%0166,GLT_set1_b4.34.filelist)
+gl_b4:
+	$(call mk6dir2filelist,mark6-11,12,BHC%0122,GLT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-11,34,BHC%0130,GLT_b4.34.filelist)
 
-## SMT
+## JCMT
 
-mg_b1: # ALMA%045/46/47/48 ; Bonn mark6-09
-	$(call mk6dir2filelist,mark6-09,12,ALMA%045,SMT_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-09,34,ALMA%047,SMT_set1_b1.34.filelist)
+mm_b1:
+	$(call mk6dir2filelist,mark6-11,12,BHC%0072,JCMT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-11,34,BHC%0080,JCMT_b1.34.filelist)
+
+mm_b4:
+	$(call mk6dir2filelist,mark6-11,12,BHC%0079,JCMT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-11,34,BHC%0083,JCMT_b4.34.filelist)
 
 ## Kitt Peak
 
-kt_b1: # SAO%0032/33/34/35 ; Bonn mark6-10
-	$(call mk6dir2filelist,mark6-10,12,SAO%0032,KT_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-10,34,SAO%0034,KT_set1_b1.34.filelist)
+kt_b1:
+	$(call mk6dir2filelist,mark6-10,12,EHT%1201,KT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-10,34,EHT%1203,KT_b1.34.filelist)
 
-## ALMA
+kt_b4:
+	$(call mk6dir2filelist,mark6-10,12,EHT%1218,KT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-10,34,EHT%1220,KT_b4.34.filelist)
 
-aa_b1: # ALMA%009/10/11/12 ; Bonn mark6-02
-	$(call mk6dir2filelist,mark6-02,12,ALMA%009,ALMA_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-02,34,ALMA%011,ALMA_set1_b1.34.filelist)
+## LMT
+
+lm_b1:
+	$(call mk6dir2filelist,mark6-02,12,BHC%0144,LMT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,BHC%0146,LMT_b1.34.filelist)
+
+lm_b4:
+	$(call mk6dir2filelist,mark6-02,12,ALMA%025,LMT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,ALMA%027,LMT_b4.34.filelist)
+
+## NOEMA
+	
+nn_b1:
+	$(call mk6dir2filelist,mark6-04,1,MPI%8010,NOEMA-b1.1.filelist)
+	$(call mk6dir2filelist,mark6-04,2,MPI%8035,NOEMA-b1.2.filelist)
+	$(call mk6dir2filelist,mark6-04,3,MPI%8057,NOEMA-b1.3.filelist)
+	$(call mk6dir2filelist,mark6-04,4,MPI%8058,NOEMA-b1.4.filelist)
+
+nn_b4:
+	$(call mk6dir2filelist,mark6-04,1,IRAM%005,NOEMA-b4.1.filelist)
+	$(call mk6dir2filelist,mark6-04,2,IRAM%006,NOEMA-b4.2.filelist)
+	$(call mk6dir2filelist,mark6-04,3,IRAM%007,NOEMA-b4.3.filelist)
+	$(call mk6dir2filelist,mark6-04,4,IRAM%008,NOEMA-b4.4.filelist)
+
+## Pico
+
+pv_b1:
+	$(call mk6dir2filelist,mark6-09,12,EHT%0076,Pico_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-09,34,EHT%0082,Pico_b1.34.filelist)
+
+pv_b4:
+	$(call mk6dir2filelist,mark6-10,12,EHT%0092,Pico_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-10,34,EHT%0098,Pico_b4.34.filelist)
 
 ## SMA APHIDS
 
-sw_b1: # GLT%0017/17/19/20 ; Bonn mark6-??
-	$(call mk6dir2filelist,mark6-11,12,GLT%0017,SMA_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-11,34,GLT%0019,SMA_set1_b1.34.filelist)
+sw_b1: # todo, not shipped yet (as of 03/2023)
+	$(call mk6dir2filelist,mark6-11,12,GLT%0017,SMA_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-11,34,GLT%0019,SMA_b1.34.filelist)
 
-sw_b4: # PERI%039/40/41/42 ; Bonn mark6-??
-	$(call mk6dir2filelist,mark6-11,12,PERI%039,SMA_set1_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-11,34,PERI%041,SMA_set1_b4.34.filelist)
+sw_b4: # todo, not shipped yet (as of 03/2023)
+	$(call mk6dir2filelist,mark6-11,12,PERI%039,SMA_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-11,34,PERI%041,SMA_b4.34.filelist)
+
+## SMT
+
+mg_b1:
+	$(call mk6dir2filelist,mark6-09,12,EHT%1101,SMT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-09,34,EHT%1212,SMT_b1.34.filelist)
+
+mg_b4:
+	$(call mk6dir2filelist,mark6-09,12,EHT%1101,SMT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-09,34,EHT%1212,SMT_b4.34.filelist)
+
+## SPT
+
+sz_b1:
+	$(call mk6dir2filelist,mark6-09,12,EHT%0078,SPT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-09,34,EHT%0080,SPT_b1.34.filelist)
+
+sz_b4:
+	$(call mk6dir2filelist,mark6-09,12,SHAO%016,SPT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-09,34,SHAO%049,SPT_b4.34.filelist)
 
 ## CHECKING
 
