@@ -77,16 +77,16 @@ lm_b4:
 ## NOEMA
 	
 nn_b1:
-	$(call mk6dir2filelist,mark6-09,1,MPI%8010,NOEMA-b1.1.filelist)
-	$(call mk6dir2filelist,mark6-09,2,MPI%8035,NOEMA-b1.2.filelist)
-	$(call mk6dir2filelist,mark6-09,3,MPI%8057,NOEMA-b1.3.filelist)
-	$(call mk6dir2filelist,mark6-09,4,MPI%8058,NOEMA-b1.4.filelist)
+	$(call mk6dir2filelist,mark6-09,1,MPI%8010,NOEMA_b1.1.filelist)
+	$(call mk6dir2filelist,mark6-09,2,MPI%8035,NOEMA_b1.2.filelist)
+	$(call mk6dir2filelist,mark6-09,3,MPI%8057,NOEMA_b1.3.filelist)
+	$(call mk6dir2filelist,mark6-09,4,MPI%8058,NOEMA_b1.4.filelist)
 
 nn_b4:
-	$(call mk6dir2filelist,mark6-09,1,IRAM%005,NOEMA-b4.1.filelist)
-	$(call mk6dir2filelist,mark6-09,2,IRAM%006,NOEMA-b4.2.filelist)
-	$(call mk6dir2filelist,mark6-09,3,IRAM%007,NOEMA-b4.3.filelist)
-	$(call mk6dir2filelist,mark6-09,4,IRAM%008,NOEMA-b4.4.filelist)
+	$(call mk6dir2filelist,mark6-09,1,IRAM%005,NOEMA_b4.1.filelist)
+	$(call mk6dir2filelist,mark6-09,2,IRAM%006,NOEMA_b4.2.filelist)
+	$(call mk6dir2filelist,mark6-09,3,IRAM%007,NOEMA_b4.3.filelist)
+	$(call mk6dir2filelist,mark6-09,4,IRAM%008,NOEMA_b4.4.filelist)
 
 ## Pico
 
