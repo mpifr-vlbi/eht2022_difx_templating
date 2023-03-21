@@ -44,10 +44,10 @@ prerequisites:
 	## Note: DiFX $ehtc/alma-vex-defs.py would be more direct, but its chan_defs are not useable as-is,
 	##       vs own ./scripts/alma-vex-defs.py usable for that but is not 4-8/5-9 aware plus b2 offset trickyness
 	## SMA a priori clock CSV files
-	#./scripts/vexdelay.py -f ./templates/230G/band1/sma-delays.rx230.sbLSB.quad1.b1.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band1/clocks_SMA.vex # e21a14 fringe
-	#./scripts/vexdelay.py -f ./templates/230G/band2/sma-delays.rx230.sbLSB.quad0.b2.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band2/clocks_SMA.vex # -c todo
-	#./scripts/vexdelay.py -f ./templates/230G/band3/sma-delays.rx230.sbUSB.quad1.b3.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band3/clocks_SMA.vex # -c todo
-	#./scripts/vexdelay.py -f ./templates/230G/band4/sma-delays.rx230.sbUSB.quad2.b4.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band4/clocks_SMA.vex # -c todo
+	./scripts/vexdelay.py -f ./priors/sma-delays.rx230.sbLSB.quad1.b1.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2022y076d21h44m00s 2022y086d12h25m00s > templates/230G/band1/clocks_SMA.vex
+	./scripts/vexdelay.py -f ./priors/sma-delays.rx230.sbLSB.quad0.b2.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2022y076d21h44m00s 2022y086d12h25m00s > templates/230G/band2/clocks_SMA.vex
+	./scripts/vexdelay.py -f ./priors/sma-delays.rx230.sbUSB.quad1.b3.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2022y076d21h44m00s 2022y086d12h25m00s > templates/230G/band3/clocks_SMA.vex
+	./scripts/vexdelay.py -f ./priors/sma-delays.rx230.sbUSB.quad2.b4.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2022y076d21h44m00s 2022y086d12h25m00s > templates/230G/band4/clocks_SMA.vex
 
 datadirsDR2022:
 	for exptname in $(TRACKS); do \
