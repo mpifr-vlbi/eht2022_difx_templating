@@ -1,38 +1,43 @@
 $CLOCK;
 *
 def Aa;
-  clock_early = 2022y078d00h00m00s: 2107.167 usec : 2022y078d00h00m00s : -10e-15;
+  clock_early = 2022y078d00h00m00s: 2107.147 usec : 2022y078d00h00m00s : -10e-15;
 enddef;
 *
 def Ax;
-  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : +0.605e-12;
+  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : +0.460e-12;
 enddef;
 *
 def Gl;
-  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : 6.29e-14;
+  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : -0.067e-12;
 enddef;
 *
 def Kt;
-  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : +5.51463318e-13;
+  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : +0.515e-12;
 enddef;
 *
 def Lm;
-  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : -5.0834e-12;
+  * Drifty - used xtal osc (Oscilloquarz) instead of H-maser or rubidium ref
+  * https://eht-wiki.haystack.mit.edu/@api/deki/files/6718/=e22-Lm-clock-model.vex
+  clock_early = 2022y076d21h44m05s : 44.609 usec : 2022y076d21h44m05s : 273.326e-12;
+  clock_early = 2022y078d03h14m02s : 73.324 usec : 2022y078d03h14m02s : 263.424e-12;
+  clock_early = 2022y079d05h35m14s : 98.168 usec : 2022y079d05h35m14s : 256.448e-12;
+  clock_early = 2022y080d21h28m05s : 12.703 usec : 2022y080d21h28m05s : 244.821e-12;
+  clock_early = 2022y082d02h36m13s : 38.329 usec : 2022y082d02h36m13s : 243.713e-12;
+  clock_early = 2022y084d21h34m08s : 96.937 usec : 2022y084d21h34m08s : 248.128e-12;
+  clock_early = 2022y085d21h21m08s : 118.336 usec : 2022y085d21h21m08s : 255.161e-12;
 enddef;
 *
 def Mm; * JCMT
-  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : +4.00635744e-13;
+  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : -0.090e-12;
 enddef;
 *
 def Mg; * SMT
-  * clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : -4.3196e-12;
-  * https://eht-wiki.haystack.mit.edu/Event_Horizon_Telescope_Home/Observing/2022_March/SMT_2022-03
-  * drift -0.249 ps/s
   clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : -0.249e-12;
 enddef;
 *
 def Nn; * NOEMA
-  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : 5.62e-15;
+  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : +0.0028e-12;
 enddef;
 *
 def Pv;
@@ -40,6 +45,6 @@ def Pv;
 enddef;
 *
 def Sz;
-  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : 0;
+  clock_early = 2022y078d00h00m00s: 0 usec: 2022y078d00h00m00s : +0.300e-12;
 enddef;
 *
