@@ -58,7 +58,7 @@ ANTENNA Mm { # JCMT
 }
 
 ANTENNA Nn {
-  datastreams = Nn_rec1slot1,Nn_rec1slot2,Nn_rec1slot3,Nn_rec1slot4
+  datastreams = Nn_ds1,Nn_ds2,Nn_ds3,Nn_ds4
   zoom = zooms58
 }
 
@@ -77,40 +77,40 @@ ANTENNA Sz { # SPT
   datastreams = Spt_ds12,Spt_ds34
   zoom = zooms58
 }
-DATASTREAM Aa_ds12 { filelist = ALMA_set1_b1.12.filelist }
-DATASTREAM Aa_ds34 { filelist = ALMA_set1_b1.34.filelist }
-DATASTREAM Ax_ds12 { filelist = APEX_set1_b1.12.filelist }
-DATASTREAM Ax_ds34 { filelist = APEX_set1_b1.34.filelist }
-DATASTREAM Glt_ds12 { filelist = GLT_set1_b1.12.filelist }
-DATASTREAM Glt_ds34 { filelist = GLT_set1_b1.34.filelist }
-DATASTREAM Jcmt_ds12 { filelist = JCMT_set1_b1.12.filelist }
-DATASTREAM Jcmt_ds34 { filelist = JCMT_set1_b1.34.filelist }
-DATASTREAM Kt_ds12 { filelist = KT_set1_b1.12.filelist }
-DATASTREAM Kt_ds34 { filelist = KT_set1_b1.34.filelist }
-DATASTREAM Lmt_ds12 { filelist = LMT_set1_b1.12.filelist }
-DATASTREAM Lmt_ds34 { filelist = LMT_set1_b1.34.filelist }
-DATASTREAM Spt_ds12 { filelist = SPT_set1_b1.12.filelist }
-DATASTREAM Spt_ds34 { filelist = SPT_set1_b1.34.filelist }
-DATASTREAM Pv_ds12 { filelist = Pico_set1_b1.12.filelist }
-DATASTREAM Pv_ds34 { filelist = Pico_set1_b1.34.filelist }
+DATASTREAM Aa_ds12 { filelist = ALMA_b1.12.filelist }
+DATASTREAM Aa_ds34 { filelist = ALMA_b1.34.filelist }
+DATASTREAM Ax_ds12 { filelist = APEX_b1.12.filelist }
+DATASTREAM Ax_ds34 { filelist = APEX_b1.34.filelist }
+DATASTREAM Glt_ds12 { filelist = GLT_b1.12.filelist }
+DATASTREAM Glt_ds34 { filelist = GLT_b1.34.filelist }
+DATASTREAM Jcmt_ds12 { filelist = JCMT_b1.12.filelist }
+DATASTREAM Jcmt_ds34 { filelist = JCMT_b1.34.filelist }
+DATASTREAM Kt_ds12 { filelist = KT_b1.12.filelist }
+DATASTREAM Kt_ds34 { filelist = KT_b1.34.filelist }
+DATASTREAM Lmt_ds12 { filelist = LMT_b1.12.filelist }
+DATASTREAM Lmt_ds34 { filelist = LMT_b1.34.filelist }
+DATASTREAM Spt_ds12 { filelist = SPT_b1.12.filelist }
+DATASTREAM Spt_ds34 { filelist = SPT_b1.34.filelist }
+DATASTREAM Pv_ds12 { filelist = Pico_b1.12.filelist }
+DATASTREAM Pv_ds34 { filelist = Pico_b1.34.filelist }
 DATASTREAM SmaAphids_ds12 { filelist = SMA_b1.12.filelist }
 DATASTREAM SmaAphids_ds34 { filelist = SMA_b1.34.filelist }
 DATASTREAM Smt_ds12 { filelist = SMT_b1.12.filelist }
 DATASTREAM Smt_ds34 { filelist = SMT_b1.34.filelist }
-DATASTREAM Nn_rec1slot1 {
-  filelist = pNOEMA_set1_rec1.1.filelist
+DATASTREAM Nn_ds1 {
+  filelist = NOEMA_b1.1.filelist
   format = INTERLACEDVDIF/0:1:2:3/8224/2
 }
-DATASTREAM Nn_rec1slot2 {
-  filelist = pNOEMA_set1_rec1.2.filelist
+DATASTREAM Nn_ds2 {
+  filelist = NOEMA_b1.2.filelist
   format = INTERLACEDVDIF/0:1:2:3/8224/2
 }
-DATASTREAM Nn_rec1slot3 {
-  filelist = pNOEMA_set1_rec1.3.filelist
+DATASTREAM Nn_ds3 {
+  filelist = NOEMA_b1.3.filelist
   format = INTERLACEDVDIF/0:1:2:3/8224/2
 }
-DATASTREAM Nn_rec1slot4 {
-  filelist = pNOEMA_set1_rec1.4.filelist
+DATASTREAM Nn_ds4 {
+  filelist = NOEMA_b1.4.filelist
   format = INTERLACEDVDIF/0:1:2:3/8224/2
 }
 
