@@ -96,22 +96,22 @@ DATASTREAM SmaAphids_ds34 { filelist = SMA_b3.34.filelist }
 DATASTREAM Smt_ds12 { filelist = SMT_b3.12.filelist }
 DATASTREAM Smt_ds34 { filelist = SMT_b3.34.filelist }
 DATASTREAM Nn_ds1 {
-  filelist = NOEMA_rec4.1.filelist
+  filelist = NOEMA_b3.1.filelist
   format = INTERLACEDVDIF/8:9:10:11/8224/2
   nBand = 16
 }
 DATASTREAM Nn_ds2 {
-  filelist = NOEMA_rec4.2.filelist
+  filelist = NOEMA_b3.2.filelist
   format = INTERLACEDVDIF/4:5:6:7/8224/2
   nBand = 16
 }
 DATASTREAM Nn_ds3 {
-  filelist = NOEMA_rec4.3.filelist
+  filelist = NOEMA_b3.3.filelist
   format = INTERLACEDVDIF/4:5:6:7/8224/2
   nBand = 16
 }
 DATASTREAM Nn_ds4 {
-  filelist = NOEMA_rec4.4.filelist
+  filelist = NOEMA_b3.4.filelist
   format = INTERLACEDVDIF/8:9:10:11/8224/2
   nBand = 16
 }

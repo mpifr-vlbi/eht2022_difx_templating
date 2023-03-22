@@ -99,18 +99,22 @@ DATASTREAM Smt_ds34 { filelist = SMT_b4.34.filelist }
 DATASTREAM Nn_ds1 {
   filelist = NOEMA_b4.1.filelist
   format = INTERLACEDVDIF/0:1:2:3/8224/2
+  nBand = 16
 }
 DATASTREAM Nn_ds2 {
   filelist = NOEMA_b4.2.filelist
   format = INTERLACEDVDIF/0:1:2:3/8224/2
+  nBand = 16
 }
 DATASTREAM Nn_ds3 {
   filelist = NOEMA_b4.3.filelist
   format = INTERLACEDVDIF/0:1:2:3/8224/2
+  nBand = 16
 }
 DATASTREAM Nn_ds4 {
   filelist = NOEMA_b4.4.filelist
   format = INTERLACEDVDIF/0:1:2:3/8224/2
+  nBand = 16
 }
 
 

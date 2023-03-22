@@ -18,30 +18,23 @@ DATASTREAM SmaAphids_ds12 { filelist = SMA_b2.12.filelist }
 DATASTREAM SmaAphids_ds34 { filelist = SMA_b2.34.filelist }
 DATASTREAM Smt_ds12 { filelist = SMT_b2.12.filelist }
 DATASTREAM Smt_ds34 { filelist = SMT_b2.34.filelist }
-
-# NOEMA 2022: data routing changed after DR, and to reflect that,
-# flipping the 1/2 3/4 file pointers and flipping threads:
 DATASTREAM Nn_ds1 {
-  filelist = NOEMA_rec2.2.filelist
+  filelist = NOEMA_b2.1.filelist
   format = INTERLACEDVDIF/8:9:10:11/8224/2
-# format = INTERLACEDVDIF/4:5:6:7/8224/2
   nBand = 16
 }
 DATASTREAM Nn_ds2 {
-  filelist = NOEMA_rec2.1.filelist
+  filelist = NOEMA_b2.2.filelist
   format = INTERLACEDVDIF/4:5:6:7/8224/2
-# format = INTERLACEDVDIF/8:9:10:11/8224/2
   nBand = 16
 }
 DATASTREAM Nn_ds3 {
-  filelist = NOEMA_rec2.4.filelist
+  filelist = NOEMA_b2.3.filelist
   format = INTERLACEDVDIF/4:5:6:7/8224/2
-# format = INTERLACEDVDIF/8:9:10:11/8224/2
   nBand = 16
 }
 DATASTREAM Nn_ds4 {
-  filelist = NOEMA_rec2.3.filelist
+  filelist = NOEMA_b2.4.filelist
   format = INTERLACEDVDIF/8:9:10:11/8224/2
-# format = INTERLACEDVDIF/4:5:6:7/8224/2
   nBand = 16
 }
