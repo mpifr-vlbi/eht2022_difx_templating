@@ -103,6 +103,9 @@ def expandIncludes(lines, includepaths):
 def populateData_Clock(lines, data):
     '''
     Update VEX entries with CLOCK data
+    Todo: make the search for clock_early in VEX less picky, currently
+          must be either a one-liner def ... enddef,
+          or three-liner with no comment lines.
     '''
 
     # Load data
@@ -112,7 +115,15 @@ def populateData_Clock(lines, data):
         d = d.strip()
         if isComment(d):
             continue
-        (antenna,delay,rate) = d.split()  # todo: try/except?
+        items = d.split() # todo: try/except?
+        if len(items) == 2:
+            (antenna,delay) = items
+            rate = None
+        elif len(items) == 3:
+            (antenna,delay,rate) = items
+        else:
+            print("Error parsing clock file line with: '%s'" % (d))
+            continue
         clk = {'antenna':antenna, 'delay':delay, 'rate':rate}
         clks.append(clk)
         ants.append(antenna)
@@ -150,7 +161,7 @@ def populateData_Clock(lines, data):
             print("Programmer oops in populateData_Clock(): antenna list index didn't match tuple index of antenna")
             sys.exit(1)
 
-	# Break up clock_early, update it
+        # Break up clock_early, update it
         i1 = line.find('clock_early')
         i2 = line.find('=', i1)
         i3 = line.find(';', i2)
@@ -158,6 +169,10 @@ def populateData_Clock(lines, data):
         oldClk = oldClk.replace('usec', ' ')
         oldClkRest = line[i3:]
         vals = oldClk.split() # [VexTime, delay, VexTime, rate, <leftovers>]
+        if clk['rate'] is None:
+            clk['rate'] = vals[3]
+            if options.verbose:
+                print('Antenna %s: retaining existing VEX clock_early rate of %s' % (currAnt, vals[3]))
         newClk = 'clock_early = %s : %s usec : %s : %s' % (vals[0],clk['delay'],vals[2],clk['rate'])
 
         # Replace with new clock line
