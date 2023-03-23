@@ -146,11 +146,13 @@ install: b1_install b2_install b3_install b4_install
 	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/$*.vext out/conventional/$*-$(REL)-b4.vex.obs
 	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/$*.v2dt out/conventional/$*-$(REL)-b4.v2d
 	@ sed -i "s/vexfilename/$*-${REL}-b4.vex.obs/g" out/conventional/$*-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.445 # LMT extra offsets/g" out/conventional/e22f27-$(REL)-b4.v2d
 
 %_b4_ob:
 	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/$*.vext out/outputbands/$*-$(REL)-b4.vex.obs
 	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/$*_outputbands.v2dt out/outputbands/$*-$(REL)-b4.v2d
 	@ sed -i "s/vexfilename/$*-${REL}-b4.vex.obs/g" out/outputbands/$*-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.445 # LMT extra offsets/g" out/outputbands/e22f27-$(REL)-b4.v2d
 
 # Custom-fiddled band 3 builds
 # (none)
