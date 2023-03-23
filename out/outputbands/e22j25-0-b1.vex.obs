@@ -637,6 +637,7 @@ def NOEMA;
      site_position_epoch = 0;
      site_position = 4523948.2896 m : 468035.5071 m : 4460364.9448 m;   * e22j25 pad N09, 10 phased
 enddef;
+*------------------------------------------------------------------------------
 $TRACKS;
 *
 def VDIF8032;
@@ -1108,6 +1109,7 @@ def FREQ_AA; * derived for on lo1=221.100 lo2=1.875 GHz
    chan_def = &B: 212281.640625 MHz : L : 62.50 MHz : &CH63 : &BBC02 : &NoCal; * b1 Y
    chan_def = &B: 212223.046875 MHz : L : 62.50 MHz : &CH64 : &BBC02 : &NoCal; * b1 Y
 enddef;
+*------------------------------------------------------------------------------
 $PHASE_CAL_DETECT;
 *
 def NoDetect;

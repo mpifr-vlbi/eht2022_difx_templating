@@ -636,6 +636,7 @@ def NOEMA;
      * site_position = 4523937.1860 m : 468033.6604 m : 4460376.3250 m; * e22j26 pad N11, 7 phased
      * site_position = 4523937.1860 m : 468033.6604 m : 4460376.3250 m; * e22j26 pad N11, 6 phased
 enddef;
+*------------------------------------------------------------------------------
 $TRACKS;
 *
 def VDIF8032;
@@ -1102,6 +1103,7 @@ def FREQ_AA; * derived for on lo1=221.100 lo2=1.875 GHz
    chan_def = &B: 229918.359375 MHz : U : 62.50 MHz : &CH63 : &BBC02 : &NoCal; * b4 Y
    chan_def = &B: 229976.953125 MHz : U : 62.50 MHz : &CH64 : &BBC02 : &NoCal; * b4 Y
 enddef;
+*------------------------------------------------------------------------------
 $PHASE_CAL_DETECT;
 *
 def NoDetect;
