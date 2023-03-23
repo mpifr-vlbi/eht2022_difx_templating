@@ -58,11 +58,11 @@ def Lm;
 enddef;
 *
 def Mm; * JCMT
-  clock_early = 2022y078d00h00m00s: 0.0 usec: 2022y078d00h00m00s : -0.090e-12;
+  clock_early = 2022y078d00h00m00s : 0.2865 usec : 2022y078d00h00m00s : -0.090e-12;
 enddef;
 *
 def Mg; * SMT
-  clock_early = 2022y078d00h00m00s: 0.0 usec: 2022y078d00h00m00s : -0.249e-12;
+  clock_early = 2022y078d00h00m00s : 0.502 usec : 2022y078d00h00m00s : -0.249e-12;
 enddef;
 *
 def Nn; * NOEMA
