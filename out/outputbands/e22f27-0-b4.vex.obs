@@ -66,7 +66,7 @@ def Mg; * SMT
 enddef;
 *
 def Nn; * NOEMA
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : +0.0028e-12;
+  clock_early = 2022y076d00h00m00s : 12.80 usec : 2022y076d00h00m00s : +0.0028e-12;
 enddef;
 *
 * Pico has an a priori freq error stated on the eht-wiki of around -0.1e-12
