@@ -1,2 +1,6 @@
 CLOCK
 # Station ID    Delay (usec)    [Rate (sec/sec)]
+# Track had no ALMA, using NOEMA for reference with guesstimate 13 usec offset similar to Aa-Nn of later tracks
+Nn              13.0
+Gl             -1.05
+Pv             0.233
