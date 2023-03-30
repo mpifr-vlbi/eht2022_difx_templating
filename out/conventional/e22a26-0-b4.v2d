@@ -45,7 +45,7 @@ ANTENNA Kt {
 ANTENNA Lm {
   datastreams = Lmt_ds12,Lmt_ds34
   zoom = zooms58
-  deltaClock = 0 # LMT extra offsets
+  deltaClock = 0.445 # LMT extra offsets
 }
 
 ANTENNA Mg { # SMT
