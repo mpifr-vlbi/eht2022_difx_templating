@@ -41,7 +41,7 @@ enddef;
 *
 * Kitt Peak rate from GPS stated on eht-wiki is +0.058 ps/s
 def Kt;
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : +0.058e-12;
+  clock_early = 2022y076d00h00m00s : -0.027 usec : 2022y076d00h00m00s : +0.058e-12;
 enddef;
 *
 * LMT
@@ -62,16 +62,16 @@ def Mm; * JCMT
 enddef;
 *
 def Mg; * SMT
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : -0.249e-12;
+  clock_early = 2022y076d00h00m00s : 0.537 usec : 2022y076d00h00m00s : -0.249e-12;
 enddef;
 *
 def Nn; * NOEMA
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : +0.0028e-12;
+  clock_early = 2022y076d00h00m00s : 13.23 usec : 2022y076d00h00m00s : +0.0028e-12;
 enddef;
 *
 * Pico has an a priori freq error stated on the eht-wiki of around -0.1e-12
 def Pv;
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : -0.105e-12;
+  clock_early = 2022y076d00h00m00s : 0.510 usec : 2022y076d00h00m00s : -0.105e-12;
 enddef;
 *
 def Sz;
