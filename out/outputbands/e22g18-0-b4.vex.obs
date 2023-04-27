@@ -36,7 +36,7 @@ def Ax;
 enddef;
 *
 def Gl;
-  clock_early = 2022y076d00h00m00s : -0.557 usec : 2022y076d00h00m00s : -0.067e-12;
+  clock_early = 2022y076d00h00m00s : -1.05 usec : 2022y076d00h00m00s : -0.067e-12;
 enddef;
 *
 * Kitt Peak rate from GPS stated on eht-wiki is +0.058 ps/s
@@ -62,7 +62,7 @@ def Mm; * JCMT
 enddef;
 *
 def Mg; * SMT
-  clock_early = 2022y076d00h00m00s : 1.104 usec : 2022y076d00h00m00s : -0.249e-12;
+  clock_early = 2022y076d00h00m00s : 0.799 usec : 2022y076d00h00m00s : -0.249e-12;
 enddef;
 *
 def Nn; * NOEMA

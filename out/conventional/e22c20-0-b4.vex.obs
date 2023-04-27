@@ -32,7 +32,7 @@ def Aa;
 enddef;
 *
 def Ax;
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : +0.460e-12;
+  clock_early = 2022y076d00h00m00s : 0.4307 usec : 2022y076d00h00m00s : +0.460e-12;
 enddef;
 *
 def Gl;
