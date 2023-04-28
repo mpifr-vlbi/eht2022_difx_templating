@@ -32,7 +32,7 @@ def Aa;
 enddef;
 *
 def Ax;
-  clock_early = 2022y076d00h00m00s : 0.4307 usec : 2022y076d00h00m00s : +0.460e-12;
+  clock_early = 2022y076d00h00m00s : 0.4343 usec : 2022y076d00h00m00s : +0.460e-12;
 enddef;
 *
 def Gl;
@@ -41,7 +41,7 @@ enddef;
 *
 * Kitt Peak rate from GPS stated on eht-wiki is +0.058 ps/s
 def Kt;
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : +0.058e-12;
+  clock_early = 2022y076d00h00m00s : -0.0084 usec : 2022y076d00h00m00s : +0.058e-12;
 enddef;
 *
 * LMT
@@ -58,11 +58,11 @@ def Lm;
 enddef;
 *
 def Mm; * JCMT
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : -0.090e-12;
+  clock_early = 2022y076d00h00m00s : 0.2907 usec : 2022y076d00h00m00s : -0.090e-12;
 enddef;
 *
 def Mg; * SMT
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : -0.249e-12;
+  clock_early = 2022y076d00h00m00s : 0.5042 usec : 2022y076d00h00m00s : -0.249e-12;
 enddef;
 *
 def Nn; * NOEMA
@@ -75,7 +75,7 @@ def Pv;
 enddef;
 *
 def Sz;
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : +0.300e-12;
+  clock_early = 2022y076d00h00m00s : 0.0165 usec : 2022y076d00h00m00s : +0.300e-12;
 enddef;
 *
 def Sw;
@@ -578,11 +578,15 @@ def SPT;
      site_name = SPT;
      site_ID = Sz;
      * Note: site (ice shelf) drifts ~10 meters per year
+     *
      * position for Apr 2018 dress rehearsal from Pedro Elosegui - epoch 20180420
      * site_position =     817.83940 m:    -823.57030 m: -6359568.49310 m;
+     *
      * position for Apr 2021, epoch 20210415, by M. Titus and V. Fish
-     site_position =     840.90160 m:    -842.71670 m: -6359567.87550 m;
-     * TODO site position Mar 2022 = ??
+     * site_position =     840.90160 m:    -842.71670 m: -6359567.87550 m;
+     *
+     * position for March 2022, epoch 20220321, per Pedro Elosequi's script
+     site_position =     848.11910 m:    -848.70500 m: -6359567.69090 m;
      *
      site_velocity =  0.000000   m/yr:  0.000000   m/yr:  0.000000  m/yr;
      site_position_epoch =   54466;
