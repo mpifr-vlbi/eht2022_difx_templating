@@ -639,7 +639,12 @@ def NOEMA;
      site_type = fixed;
      site_velocity =  0.0 m/yr : 0.0 m/yr : 0.0 m/yr;
      site_position_epoch = 0;
-     site_position = 4523988.9167 m : 467862.2748 m : 4460342.0614 m; * e22c20 pad W23 per eht-wiki, unlike E10 per vlbimonitordb
+     *
+     * e22c20 pad E10 according to EHT VLBI Monitor logging - fringes
+     site_position = 4524002.2765 m : 468122.7841 m : 4460301.4563 m; * e22c20 pad E10, 10 phased, 2022-03-20 04:27:37
+     *
+     * e22c20 pad W23 according to eht-wiki - no fringes
+     * site_position = 4523988.9167 m : 467862.2748 m : 4460342.0614 m;
 enddef;
 *------------------------------------------------------------------------------
 $TRACKS;

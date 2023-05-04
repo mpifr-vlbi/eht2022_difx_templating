@@ -66,16 +66,16 @@ def Mg; * SMT
 enddef;
 *
 def Nn; * NOEMA
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : +0.0028e-12;
+  clock_early = 2022y076d00h00m00s : 12.6447 usec : 2022y076d00h00m00s : +0.0028e-12;
 enddef;
 *
 * Pico has an a priori freq error stated on the eht-wiki of around -0.1e-12
 def Pv;
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : -0.105e-12;
+  clock_early = 2022y076d00h00m00s : 0.4565 usec : 2022y076d00h00m00s : -0.105e-12;
 enddef;
 *
 def Sz;
-  clock_early = 2022y076d00h00m00s : 0.0165 usec : 2022y076d00h00m00s : +0.300e-12;
+  clock_early = 2022y076d00h00m00s : 0.0314 usec : 2022y076d00h00m00s : +0.300e-12;
 enddef;
 *
 def Sw;
@@ -636,7 +636,12 @@ def NOEMA;
      site_type = fixed;
      site_velocity =  0.0 m/yr : 0.0 m/yr : 0.0 m/yr;
      site_position_epoch = 0;
-     site_position = 4523988.9167 m : 467862.2748 m : 4460342.0614 m; * e22c20 pad W23 per eht-wiki, unlike E10 per vlbimonitordb
+     *
+     * e22c20 pad E10 according to EHT VLBI Monitor logging - fringes
+     site_position = 4524002.2765 m : 468122.7841 m : 4460301.4563 m; * e22c20 pad E10, 10 phased, 2022-03-20 04:27:37
+     *
+     * e22c20 pad W23 according to eht-wiki - no fringes
+     * site_position = 4523988.9167 m : 467862.2748 m : 4460342.0614 m;
 enddef;
 *------------------------------------------------------------------------------
 $TRACKS;
