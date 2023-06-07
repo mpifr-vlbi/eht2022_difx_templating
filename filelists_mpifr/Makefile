@@ -101,12 +101,12 @@ pv_b4:
 ## SMA APHIDS
 
 sw_b1: # todo, not shipped yet (as of 03/2023)
-	$(call mk6dir2filelist,mark6-11,12,GLT%0017,SMA_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-11,34,GLT%0019,SMA_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-05,12,PERI%039,SMA_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-05,34,PERI%041,SMA_b1.34.filelist)
 
 sw_b4: # todo, not shipped yet (as of 03/2023)
-	$(call mk6dir2filelist,mark6-11,12,PERI%039,SMA_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-11,34,PERI%041,SMA_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-05,12,BHC%0106,SMA_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-05,34,BHC%0108,SMA_b4.34.filelist)
 
 ## SMT
 
