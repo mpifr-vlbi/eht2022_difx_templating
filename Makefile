@@ -146,23 +146,31 @@ install: b1_install b2_install b3_install b4_install
 	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/$*.vext out/conventional/$*-$(REL)-b4.vex.obs
 	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/$*.v2dt out/conventional/$*-$(REL)-b4.v2d
 	@ sed -i "s/vexfilename/$*-${REL}-b4.vex.obs/g" out/conventional/$*-$(REL)-b4.v2d
-	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.445 # LMT extra offsets/g" out/conventional/e22f27-$(REL)-b4.v2d
-	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.445 # LMT extra offsets/g" out/conventional/e22a26-$(REL)-b4.v2d
-	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.410 # LMT extra offsets/g" out/conventional/e22d23-$(REL)-b4.v2d
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.424 # LMT extra offsets/g" out/conventional/e22c20-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.409 # LMT extra offsets/g" out/conventional/e22e22-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.410 # LMT extra offsets/g" out/conventional/e22d23-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.445 # LMT extra offsets/g" out/conventional/e22a26-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.445 # LMT extra offsets/g" out/conventional/e22f27-$(REL)-b4.v2d
 	#
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.462 # SMA extra offsets/g" out/conventional/e22g18-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/conventional/e22b19-$(REL)-b4.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/conventional/e22c20-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/conventional/e22e22-$(REL)-b4.v2d
 
 %_b4_ob:
 	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/$*.vext out/outputbands/$*-$(REL)-b4.vex.obs
 	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/$*_outputbands.v2dt out/outputbands/$*-$(REL)-b4.v2d
 	@ sed -i "s/vexfilename/$*-${REL}-b4.vex.obs/g" out/outputbands/$*-$(REL)-b4.v2d
-	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.445 # LMT extra offsets/g" out/outputbands/e22f27-$(REL)-b4.v2d
-	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.445 # LMT extra offsets/g" out/outputbands/e22a26-$(REL)-b4.v2d
-	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.410 # LMT extra offsets/g" out/outputbands/e22d23-$(REL)-b4.v2d
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.424 # LMT extra offsets/g" out/outputbands/e22c20-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.409 # LMT extra offsets/g" out/outputbands/e22e22-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.410 # LMT extra offsets/g" out/outputbands/e22d23-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.445 # LMT extra offsets/g" out/outputbands/e22a26-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.445 # LMT extra offsets/g" out/outputbands/e22f27-$(REL)-b4.v2d
 	#
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.462 # SMA extra offsets/g" out/outputbands/e22g18-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22b19-$(REL)-b4.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22c20-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22e22-$(REL)-b4.v2d
 
 # Custom-fiddled band 3 builds
 # (none)
