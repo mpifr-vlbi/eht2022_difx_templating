@@ -174,6 +174,7 @@ install: b1_install b2_install b3_install b4_install
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22c20-$(REL)-b4.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22e22-$(REL)-b4.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22d23-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.18 # SMA extra offsets/g" out/outputbands/e22a26-$(REL)-b4.v2d
 
 # Custom-fiddled band 3 builds
 # (none)
