@@ -31,8 +31,10 @@ ax_b1:
 	$(call mk6dir2filelist,mark6-09,34,EHT%1249,APEX_b1.34.filelist)
 
 ax_b4:
-	$(call mk6dir2filelist,mark6-10,12,MPI%6400,APEX_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-10,12,MPI%6400,APEX_b4.12.set1.filelist)
+	$(call mk6dir2filelist,mark6-10,12,MPI%6418,APEX_b4.12.set2.filelist)
 	$(call mk6dir2filelist,mark6-09,34,EHT%1246,APEX_b4.34.filelist)
+	cat APEX_b4.12.set1.filelist APEX_b4.12.set2.filelist > APEX_b4.12.filelist
 
 ## GLT
 
