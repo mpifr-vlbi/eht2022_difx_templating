@@ -86,7 +86,7 @@ diff: b1_diff b2_diff b3_diff b4_diff
 %_diff:
 	for exptname in $(TRACKS); do \
 		diff -u out/outputbands/$${exptname}-$(REL)-$*.vex.obs $(EXPROOT)/$${exptname}/$(REV)/$*_outputbands/$${exptname}-$(REL)-$*.vex.obs && true ; \
-	done
+	done ; exit 0
 
 ####################################################################################
 ## EHT 2022 -- Band 1
