@@ -73,6 +73,8 @@ all: $(DIFX_TARGETS)
 
 install: b1_install b2_install b3_install b4_install
 
+diff: b1_diff b2_diff b3_diff b4_diff
+
 %_install:
 	for exptname in $(TRACKS); do \
 		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/$*/ ; \
@@ -81,7 +83,10 @@ install: b1_install b2_install b3_install b4_install
 		cp -av out/outputbands/$${exptname}-${REL}-$*.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/$*_outputbands/ ; \
 	done
 
-# diff: diff_b1 diff_b4
+%_diff:
+	for exptname in $(TRACKS); do \
+		diff -u out/outputbands/$${exptname}-$(REL)-$*.vex.obs $(EXPROOT)/$${exptname}/$(REV)/$*_outputbands/$${exptname}-$(REL)-$*.vex.obs && true ; \
+	done
 
 ####################################################################################
 ## EHT 2022 -- Band 1
@@ -180,3 +185,6 @@ install: b1_install b2_install b3_install b4_install
 
 # Custom-fiddled band 3 builds
 # (none)
+
+####################################################################################
+
