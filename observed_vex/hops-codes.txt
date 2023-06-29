@@ -1,10 +1,8 @@
-
 exper_num--Track---Time UT-----------------Stations---------------Label--------------
-     3762  e21b09  AM 08-09APR21(098-099)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 1
-     3763  e21e13  AM 12-13APR21(102-103)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 5
-     3764  e21a14  AM 13-14APR21(103-104)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 6
-     3765  e21d15  AM 14-15APR21(104-105)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 7
-     3766  e21a16  AM 15-16APR21(105-106)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 8
-     3767  e21a17  AM 16-17APR21(106-107)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 9
-     3768  e21e18  AM 17-18APR21(107-108)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 10
-     3769  e21f19  AM 19APR21(109)         NnPvGlAxAaMgSwMm       0.8mm EHT Night 11
+     3803  e22g18  AM 17-18MAR22(076-077)  NnPvGlSzAxAaLmKtMgSwMm night 2
+     3804  e22b19  AM 19MAR22(078)         NnPvGlSzAxAaLmKtMgSwMm night 3
+     3805  e22c20  AM 20MAR22(079)         NnPvGlSzAxAaLmKtMgSwMm night 4
+     3806  e22e22  AM 21-22MAR22(080-081)  NnPvGlSzAxAaLmKtMgSwMm night 6
+     3807  e22d23  AM 23MAR22(082)         NnPvGlSzAxAaLmKtMgSwMm night 7
+     3808  e22a26  AM 25-26MAR22(084-085)  NnPvGlSzAxAaLmKtMgSwMm night 10
+     3809  e22f27  AM 26-27MAR22(085-086)  NnPvGlSzAxAaLmKtMgSwMm night 11

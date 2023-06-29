@@ -14,6 +14,7 @@ $EXPER;
 *
 def e22b19;
      exper_name = e22b19;
+     exper_num = 3804;
      exper_description = "ALMA+EHT VLBI March 2022";
      PI_name = "EHTC";
      PI_email = not@an.address;
