@@ -1155,7 +1155,12 @@ def SGRA;
 *    ra = 17h47m03.7438360s; dec = -29d00'58.158137"; ref_coord_frame = Date;
 *    ra = 17h45m40.0409000s; dec = -29d00'28.118000"; ref_coord_frame = J2000;
 *    Proper motion (-3.156,-5.585) mas/yr:
-     ra = 17h45m40.03680s; dec = -29d00'28.2425"; ref_coord_frame = J2000;
+*    ra = 17h45m40.03680s; dec = -29d00'28.2425"; ref_coord_frame = J2000;
+*
+*    New position from V. Fish 2 May 2023 email:
+*    "Using the Xu et al. (2022 ApJ 940 15) position and proper motion, I calculate that for epoch
+*    2022.222 (doy 81.03) the apparent J2000 coordinates of Sgr A* were ..."
+     ra = 17h45m40.032329; dec = -29d00'28.255012"; ref_coord_frame = J2000;
 enddef;
 *
 def VXSGR;
