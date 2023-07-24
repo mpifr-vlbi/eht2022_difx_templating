@@ -472,7 +472,7 @@ def LMT;
      axis_type = az : el;
      antenna_motion = el :  60.0 deg/min : 30 sec;  *    1.000 deg/sec/sec
      antenna_motion = az :  42.0 deg/min : 30 sec;  *    0.500 deg/sec/sec
-     axis_offset =    0.00000 m;
+     axis_offset =    3.30000 m;
 enddef;
 *
 def NOEMA;
