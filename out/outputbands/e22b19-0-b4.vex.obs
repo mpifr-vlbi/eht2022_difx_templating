@@ -63,7 +63,7 @@ def Mm; * JCMT
 enddef;
 *
 def Mg; * SMT
-  clock_early = 2022y076d00h00m00s : 0.502 usec : 2022y076d00h00m00s : -0.249e-12;
+  clock_early = 2022y076d00h00m00s : 0.535 usec : 2022y076d00h00m00s : -0.249e-12;
 enddef;
 *
 def Nn; * NOEMA
@@ -76,7 +76,7 @@ def Pv;
 enddef;
 *
 def Sz;
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : +0.300e-12;
+  clock_early = 2022y076d00h00m00s : 0.035 usec : 2022y076d00h00m00s : +0.300e-12;
 enddef;
 *
 def Sw;
