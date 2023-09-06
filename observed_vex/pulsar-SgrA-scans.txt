@@ -1,0 +1,71 @@
+079-0540 SGRA  AA  AX  NN  PV  SZ  
+079-0608 SGRA  AA  AX  NN  PV  SZ  
+079-0631 SGRA  AA  AX  NN  PV  SZ  
+079-0652 SGRA  AA  AX  NN  PV  SZ  
+079-0720 SGRA  AA  AX  NN  PV  SZ  
+079-0741 SGRA  AA  AX  NN  PV  SZ  
+079-0814 SGRA  AA  AX  NN  PV  SZ  --  LM  
+079-0834 SGRA  AA  AX  --  PV  SZ  --  LM  
+079-0909 SGRA  AA  AX  --  PV  SZ  KT  LM  
+079-0925 SGRA  AA  AX  --  --  SZ  KT  LM  --  
+079-0943 SGRA  AA  AX  --  --  SZ  KT  LM  --  
+079-1020 SGRA  AA  AX  --  --  SZ  KT  LM  MG  
+079-1036 SGRA  AA  AX  --  --  SZ  KT  LM  MG  
+079-1057 SGRA  AA  AX  --  --  SZ  KT  LM  MG  
+079-1131 SGRA  AA  AX  --  --  SZ  KT  LM  MG  --  --  
+079-1151 SGRA  AA  AX  --  --  SZ  KT  LM  MG  --  --  
+079-1222 SGRA  AA  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1235 SGRA  AA  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1258 SGRA  AA  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1333 SGRA  AA  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1356 SGRA  AA  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1414 SGRA  AA  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1440 SGRA  AA  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1502 SGRA  AA  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1520 SGRA  AA  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1546 SGRA  --  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1604 SGRA  --  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1622 SGRA  --  AX  --  --  SZ  KT  LM  MG  MM  SW  
+079-1635 SGRA  --  AX  --  --  SZ  KT  LM  MG  MM  SW  
+081-0624 SGRA  NN  PV  --  AX  AA  --  --  --  --  --  SZ  
+081-0644 SGRA  NN  PV  --  AX  AA  --  --  --  --  --  SZ  
+081-0753 SGRA  NN  PV  --  AX  AA  LM  --  --  --  --  SZ  
+081-0813 SGRA  NN  PV  --  AX  AA  LM  --  --  --  --  SZ  
+081-0900 SGRA  --  PV  --  AX  AA  LM  KT  --  --  --  SZ  
+081-0919 SGRA  --  --  --  AX  AA  LM  KT  --  --  --  SZ  
+081-0951 SGRA  --  --  --  AX  AA  LM  KT  MG  --  --  SZ  
+081-1012 SGRA  --  --  --  AX  AA  LM  KT  MG  --  --  SZ  
+081-1028 SGRA  --  --  --  AX  AA  LM  KT  MG  --  --  SZ  
+081-1049 SGRA  --  --  --  AX  AA  LM  KT  MG  --  --  SZ  
+081-1123 SGRA  --  --  --  AX  AA  LM  KT  MG  --  --  SZ  
+081-1143 SGRA  --  --  --  AX  AA  LM  KT  MG  MM  --  SZ  
+081-1215 SGRA  --  --  --  AX  AA  LM  KT  MG  MM  SW  SZ  
+081-1232 SGRA  --  --  --  AX  AA  LM  KT  MG  MM  SW  SZ  
+081-1252 SGRA  --  --  --  AX  AA  LM  KT  MG  MM  SW  SZ  
+081-1325 SGRA  --  --  --  AX  AA  LM  KT  MG  MM  SW  SZ  
+081-1348 SGRA  --  --  --  AX  AA  LM  KT  MG  MM  SW  SZ  
+081-1406 SGRA  --  --  --  AX  AA  LM  KT  MG  MM  SW  SZ  
+081-1433 SGRA  --  --  --  AX  AA  LM  KT  MG  MM  SW  SZ  
+081-1456 SGRA  --  --  --  AX  AA  LM  KT  MG  MM  SW  SZ  
+081-1514 SGRA  --  --  --  AX  AA  LM  KT  MG  MM  SW  SZ  
+081-1542 SGRA  --  --  --  AX  --  LM  KT  MG  MM  SW  SZ  
+081-1555 SGRA  --  --  --  AX  --  LM  KT  MG  MM  SW  SZ  
+082-0511 SGRA  AX  NN  PV  SZ  AA  --  --  --  
+082-0612 SGRA  AX  NN  PV  SZ  AA  --  --  --  
+082-0712 SGRA  AX  NN  PV  SZ  AA  --  --  --  --  --  
+082-0812 SGRA  AX  NN  PV  SZ  AA  --  LM  --  --  --  
+082-0825 SGRA  AX  --  PV  SZ  AA  --  LM  --  --  --  
+082-0854 SGRA  AX  --  PV  SZ  AA  KT  LM  --  --  --  
+082-0950 SGRA  AX  --  --  SZ  AA  KT  LM  MG  --  --  
+082-1040 SGRA  AX  --  --  SZ  AA  KT  LM  MG  --  --  
+082-1139 SGRA  AX  --  --  SZ  AA  KT  LM  MG  MM  --  
+082-1236 SGRA  AX  --  --  SZ  AA  KT  LM  MG  MM  SW  
+082-1254 SGRA  AX  --  --  SZ  AA  KT  LM  MG  MM  SW  
+082-1320 SGRA  AX  --  --  SZ  AA  KT  LM  MG  MM  SW  
+082-1338 SGRA  AX  --  --  SZ  AA  KT  LM  MG  MM  SW  
+082-1413 SGRA  AX  --  --  SZ  AA  KT  LM  MG  MM  SW  
+082-1439 SGRA  AX  --  --  SZ  AA  KT  LM  MG  MM  SW  
+082-1506 SGRA  AX  --  --  SZ  AA  KT  LM  MG  MM  SW  
+082-1534 SGRA  AX  --  --  SZ  --  KT  LM  MG  MM  SW  
+082-1556 SGRA  AX  --  --  SZ  --  KT  LM  MG  MM  SW  
+082-1618 SGRA  --  --  --  SZ  --  KT  LM  MG  MM  SW  
