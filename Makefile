@@ -169,6 +169,7 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/$*.vext out/outputbands/$*-$(REL)-b4.vex.obs
 	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/$*_outputbands.v2dt out/outputbands/$*-$(REL)-b4.v2d
 	@ sed -i "s/vexfilename/$*-${REL}-b4.vex.obs/g" out/outputbands/$*-$(REL)-b4.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.168 # LMT extra offsets/g" out/outputbands/e22g18-$(REL)-b4.v2d
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.424 # LMT extra offsets/g" out/outputbands/e22c20-$(REL)-b4.v2d
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.409 # LMT extra offsets/g" out/outputbands/e22e22-$(REL)-b4.v2d
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.410 # LMT extra offsets/g" out/outputbands/e22d23-$(REL)-b4.v2d
