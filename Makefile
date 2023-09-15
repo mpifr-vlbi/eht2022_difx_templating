@@ -86,6 +86,9 @@ diff: b1_diff b2_diff b3_diff b4_diff
 %_diff:
 	for exptname in $(TRACKS); do \
 		diff -u $(EXPROOT)/$${exptname}/$(REV)/$*_outputbands/$${exptname}-$(REL)-$*.vex.obs out/outputbands/$${exptname}-$(REL)-$*.vex.obs && true ; \
+	done ; \
+	for exptname in $(TRACKS); do \
+		diff -u $(EXPROOT)/$${exptname}/$(REV)/$*_outputbands/$${exptname}-$(REL)-$*.v2d out/outputbands/$${exptname}-$(REL)-$*.v2d && true ; \
 	done ; exit 0
 
 ####################################################################################
