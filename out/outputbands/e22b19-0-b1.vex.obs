@@ -33,16 +33,16 @@ def Aa;
 enddef;
 *
 def Ax;
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : +0.460e-12;
+  clock_early = 2022y076d00h00m00s : 0.3343 usec : 2022y076d00h00m00s : +0.460e-12;
 enddef;
 *
 def Gl;
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : -0.067e-12;
+  clock_early = 2022y076d00h00m00s : -0.819 usec : 2022y076d00h00m00s : -0.067e-12;
 enddef;
 *
 * Kitt Peak rate from GPS stated on eht-wiki is +0.058 ps/s
 def Kt;
-  clock_early = 2022y076d00h00m00s : +0.01 usec : 2022y076d00h00m00s : +0.058e-12;
+  clock_early = 2022y076d00h00m00s : -0.01461 usec : 2022y076d00h00m00s : +0.058e-12;
 enddef;
 *
 * LMT
@@ -59,24 +59,24 @@ def Lm;
 enddef;
 *
 def Mm; * JCMT
-  clock_early = 2022y076d00h00m00s : +0.31 usec : 2022y076d00h00m00s : -0.090e-12;
+  clock_early = 2022y076d00h00m00s : 0.2865 usec : 2022y076d00h00m00s : -0.090e-12;
 enddef;
 *
 def Mg; * SMT
-  clock_early = 2022y076d00h00m00s : +0.510 usec : 2022y076d00h00m00s : -0.249e-12;
+  clock_early = 2022y076d00h00m00s : 0.535 usec : 2022y076d00h00m00s : -0.249e-12;
 enddef;
 *
 def Nn; * NOEMA
-  clock_early = 2022y076d00h00m00s : +15.12 usec : 2022y076d00h00m00s : +0.0028e-12;
+  clock_early = 2022y076d00h00m00s : 13.242 usec : 2022y076d00h00m00s : +0.0028e-12;
 enddef;
 *
 * Pico has an a priori freq error stated on the eht-wiki of around -0.1e-12
 def Pv;
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : -0.105e-12;
+  clock_early = 2022y076d00h00m00s : 0.443 usec : 2022y076d00h00m00s : -0.105e-12;
 enddef;
 *
 def Sz;
-  clock_early = 2022y076d00h00m00s: 0.0 usec: 2022y076d00h00m00s : +0.300e-12;
+  clock_early = 2022y076d00h00m00s : 0.035 usec : 2022y076d00h00m00s : +0.300e-12;
 enddef;
 *
 def Sw;
@@ -328,8 +328,8 @@ def 1mmlcp;
      ref $IF = IF_NOMINAL:Nn:Pv:Gl:Ax:Sz:Kt:Lm:Mg:Sw:Mm;
      ref $IF = IF_APEX:Ax;
      ref $IF = IF_ALMA:Aa;
-     ref $BBC = BBC_COMMON:Pv:Sz:Kt:Lm:Mg:Sw:Mm:Nn;
-     ref $BBC = BBC_POLSWAP:Gl:Ax;
+     ref $BBC = BBC_COMMON:Pv:Gl:Kt:Lm:Mg:Sw:Mm:Nn;
+     ref $BBC = BBC_POLSWAP:Sz:Ax;
      ref $BBC = BBC_ALMA:Aa;
      ref $FREQ = FREQ_COMMON:Sz:Kt:Lm:Mg:Mm;
      ref $FREQ = FREQ_SMA:Sw;

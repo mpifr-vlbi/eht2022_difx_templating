@@ -45,7 +45,7 @@ ANTENNA Kt {
 ANTENNA Lm {
   datastreams = Lmt_ds12,Lmt_ds34
   zoom = zooms58
-  deltaClock = 0 # LMT extra offsets
+  deltaClock = 0.410 # LMT extra offsets
 }
 
 ANTENNA Mg { # SMT
@@ -71,7 +71,7 @@ ANTENNA Pv {
 ANTENNA Sw { # SMA APHIDS
   datastreams = SmaAphids_ds12,SmaAphids_ds34
   zoom = zooms58
-  deltaClock = 0 # SMA extra offsets
+  deltaClock = -105.19 # SMA extra offsets
 }
 
 ANTENNA Sz { # SPT
@@ -206,7 +206,8 @@ ZOOM zooms62
 SETUP zoomSetup {
   numBufferedFFTs = 20
   tInt = 0.400
-  subintNS =  3200000
+  # subintNS =  3200000  # terribly slow at MPIfR
+  subintNS =  40000000   # by factor 2 zippier correlation at MPIfR
   FFTSpecRes = 0.015625
   outputSpecRes = 0.5
   xmacLength = 0
