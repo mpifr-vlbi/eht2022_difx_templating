@@ -7,7 +7,7 @@ def 1mmlcp;
      ref $IF = IF_APEX:Ax;
      ref $IF = IF_ALMA:Aa;
      ref $BBC = BBC_COMMON:Pv:Sz:Kt:Lm:Mg:Sw:Mm:Nn;
-     ref $BBC = BBC_POLSWAP:Gl:Ax;
+     ref $BBC = BBC_POLSWAP:Gl:Sz:Lm:Ax;
      ref $BBC = BBC_ALMA:Aa;
      ref $FREQ = FREQ_COMMON:Sz:Kt:Lm:Mg:Mm;
      ref $FREQ = FREQ_SMA:Sw;
