@@ -15,5 +15,5 @@ make install
 Detailed notes are on the EHT wiki (https://eht-wiki.haystack.mit.edu/Event_Horizon_Telescope_Home/Observing/2022_April/Correlation and other pages).
 
 Notes:
-- ALMA Cycle 7+ used CALC 11, need DIFX_CALC_PROGRAM=difxcalc
+- ALMA Cycle 7+ used CALC 11, need to have environment variable setting DIFX_CALC_PROGRAM=difxcalc, or use an explicit call "calcifMixed --calc=difxcalc *.calc" with a later "startdifx --dont-calc ...".
 
