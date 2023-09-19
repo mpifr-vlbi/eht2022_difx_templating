@@ -102,6 +102,7 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	@ sed -i "s/vexfilename/$*-${REL}-b1.vex.obs/g" out/conventional/$*-$(REL)-b1.v2d
 	#done:
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.114 # LMT extra offsets/g" out/conventional/e22g18-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.355 # LMT extra offsets/g" out/conventional/e22b19-$(REL)-b1.v2d
 	#todo:
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.424 # LMT extra offsets/g" out/conventional/e22c20-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.409 # LMT extra offsets/g" out/conventional/e22e22-$(REL)-b1.v2d
@@ -111,8 +112,8 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	#
 	#done:
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.557 # SMA extra offsets/g" out/conventional/e22g18-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.264 # SMA extra offsets/g" out/conventional/e22b19-$(REL)-b1.v2d
 	# todo:
-	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/conventional/e22b19-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/conventional/e22c20-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/conventional/e22e22-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/conventional/e22d23-$(REL)-b1.v2d
@@ -125,6 +126,7 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	@ sed -i "s/vexfilename/$*-${REL}-b1.vex.obs/g" out/outputbands/$*-$(REL)-b1.v2d
 	#done:
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.114 # LMT extra offsets/g" out/outputbands/e22g18-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.355 # LMT extra offsets/g" out/outputbands/e22b19-$(REL)-b1.v2d
 	# todo:
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.424 # LMT extra offsets/g" out/outputbands/e22c20-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.409 # LMT extra offsets/g" out/outputbands/e22e22-$(REL)-b1.v2d
@@ -134,8 +136,8 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	#
 	#done:
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.557 # SMA extra offsets/g" out/outputbands/e22g18-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.264 # SMA extra offsets/g" out/outputbands/e22b19-$(REL)-b1.v2d
 	# todo:
-	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22b19-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22c20-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22e22-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22d23-$(REL)-b1.v2d
