@@ -210,7 +210,8 @@ ZOOM zooms62
 SETUP zoomSetup {
   numBufferedFFTs = 20
   tInt = 0.400
-  subintNS =  3200000
+  # subintNS =  3200000  # terribly slow at MPIfR
+  subintNS =  40000000   # by factor 2 zippier correlation at MPIfR
   FFTSpecRes = 0.015625
   outputSpecRes = 0.5
   xmacLength = 0
