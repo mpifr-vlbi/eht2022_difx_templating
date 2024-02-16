@@ -72,7 +72,7 @@ enddef;
 *
 * Pico has an a priori freq error stated on the eht-wiki of around -0.1e-12
 def Pv;
-  clock_early = 2022y076d00h00m00s : -0.0826 usec : 2022y076d00h00m00s : -1.0658e-13;
+  clock_early = 2022y076d00h00m00s : 0.4748 usec : 2022y076d00h00m00s : -1.0658e-13;
 enddef;
 *
 def Sz;
