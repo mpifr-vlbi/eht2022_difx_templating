@@ -7,7 +7,7 @@ DIFX_TARGETS_ZOOM := $(addsuffix _b1,$(TRACKS)) $(addsuffix _b2,$(TRACKS)) $(add
 DIFX_TARGETS_OUTPUTBAND := $(addsuffix _ob,$(DIFX_TARGETS_ZOOM))
 DIFX_TARGETS := $(DIFX_TARGETS_ZOOM) $(DIFX_TARGETS_OUTPUTBAND)
 
-# .NOTPARALLEL:  # note: quite slow build, commented out again; but be careful to do 'make all' and then 'make install' as separate steps, not 'make all install'
+.NOTPARALLEL:  # note: quite slow build, commented out again; but be careful to do 'make all' and then 'make install' as separate steps, not 'make all install'
 
 default: all
 
@@ -113,8 +113,8 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	#done:
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.557 # SMA extra offsets/g" out/conventional/e22g18-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.264 # SMA extra offsets/g" out/conventional/e22b19-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.256 # SMA extra offsets/g" out/conventional/e22c20-$(REL)-b1.v2d
 	# todo:
-	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/conventional/e22c20-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/conventional/e22e22-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/conventional/e22d23-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.18 # SMA extra offsets/g" out/conventional/e22a26-$(REL)-b1.v2d
@@ -137,8 +137,8 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	#done:
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.557 # SMA extra offsets/g" out/outputbands/e22g18-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.264 # SMA extra offsets/g" out/outputbands/e22b19-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.256 # SMA extra offsets/g" out/outputbands/e22c20-$(REL)-b1.v2d
 	# todo:
-	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22c20-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22e22-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.19 # SMA extra offsets/g" out/outputbands/e22d23-$(REL)-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.18 # SMA extra offsets/g" out/outputbands/e22a26-$(REL)-b1.v2d
