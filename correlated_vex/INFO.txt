@@ -1,0 +1,5 @@
+
+Copies of the v2d+vex files that were used in DiFX production correlation.
+
+These could conceivably differ in some ways (e.g., further comments) from
+the Makefile-generated files that are under ../out/outputbands/
