@@ -1,0 +1,13 @@
+
+Mikes preliminary rates for Band 2, determined autumn 2023,
+not used in production but retained here for reference:
+
+Ax     0.604e-12 s/s
+Gl    -0.252e-12 s/s
+Mg    -0.566e-12 s/s
+Nn     5.620e-15 s/s
+Pv   -1.0658e-13 s/s
+Mm    -0.263e-12 s/s
+
+Sz    -0.300e-12 s/s  The '-' sign is correct, unfortunately production band4 had +0.3e-12, stuck with that now
+Sz    -0.035e-12 s/s  Alternate rate experimented with in e22d23 b2
