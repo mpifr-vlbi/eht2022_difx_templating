@@ -1,0 +1,4 @@
+out/conventional/*
+.sessionid.vlbimon1.txt
+scripts/vlbimonitordb/.sessionid.vlbimon1.txt
+scripts/vlbimonitordb/__pycache__
