@@ -1,8 +1,9 @@
 CLOCK
 # Station ID    Delay (usec)    [Rate (sec/sec)]
-Ax              0.4110          0.532e-12
-Kt              -0.0040
-Mg              0.5615
-Sz              -0.1524         -0.035e-12
+Ax              0.4110
+Kt              -0.0142
+Mg              0.5476
+Sz              -0.1410
 Mm              0.319
 Nn              12.259
+# Gl Pv did not observe
